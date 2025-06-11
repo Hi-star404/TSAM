@@ -180,7 +180,7 @@
 
       <p>We evaluated TSAM on the <a href="[https://gewu-lab.github.io/Ref-AVS/]">Ref-AVS dataset</a>, which contains 20,000 text expressions with pixel-level masks across 4,000 10-second videos, covering diverse audible and inaudible objects. It includes 2,908 training, 276 validation, and 818 test videos. The test set is split into <strong>Seen</strong> (292), <strong>Unseen</strong> (269), and <strong>Null</strong> (257) subsets to test generalization and robustness.</p>
 
-      <p>As shown in the Table below, TSAM outperforms existing methods, especially on the Unseen subset, demonstrating strong generalization to novel objects.</p>
+      <p>As shown in the Table 1, TSAM outperforms existing methods, especially on the Unseen subset, demonstrating strong generalization to novel objects.</p>
 
       <div style="display: flex; flex-direction: column;">
         <table class="table is-bordered is-striped is-hoverable is-fullwidth">
@@ -215,7 +215,7 @@
         <div style="text-align: center; margin-top: 0.5rem;"><em>Table 1: Performance comparison on the Ref-AVS dataset. <sup>†</sup> denotes text integration in AVS from [Wang et al.], <sup>‡</sup> indicates audio integration in Ref-VOS, and * marks our implementation with text added to AVS.</em></div>
       </div>
 
-      <p>We further conducted an ablation study (Table below) to assess the impact of each module (see the pipeline above): the temporal branch (TB), temporal modality fusion layer (TMFL), dense (DPM) and sparse (SPM) prompting modules, cached memory (CM) for audio+visual (a+v) or visual (v) only, adapter module (AM), and the LIoU loss. Each contributes to TSAM’s robust performance, especially on unseen and null cases.</p>
+      <p>We further conducted an ablation study (Table 2) to assess the impact of each module (see the pipeline above): the temporal branch (TB), temporal modality fusion layer (TMFL), dense (DPM) and sparse (SPM) prompting modules, cached memory (CM) for audio+visual (a+v) or visual (v) only, adapter module (AM), and the LIoU loss. Each contributes to TSAM’s robust performance, especially on unseen and null cases.</p>
 
       <div style="display: flex; flex-direction: column;">
         <table class="table is-bordered is-striped is-hoverable is-fullwidth">
