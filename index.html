@@ -216,32 +216,44 @@
 
       <p>We further conducted an ablation study (Table 2) to assess the impact of each module: the temporal branch (TB), temporal modality fusion layer (TMFL), dense (DPM) and sparse (SPM) prompting modules, cached memory (CM) for audio+visual (a+v) or visual (v) only, adapter module (AM), and the LIoU loss. Each contributes to TSAM’s robust performance, especially on unseen and null cases.</p>
 
-      \begin{table}[bb]
-        \centering
-        \scalebox{0.65}{
-        \begin{tabular}{@{}lcccccccccc@{}}
-          \toprule
-          \multirow{2}{*}{Setting}& \multicolumn{2}{c}{Seen} && \multicolumn{2}{c}{Unseen} && \multicolumn{2}{c}{Mix(S+U)} &Null\\
-          \cline{2-3}\cline{5-6}\cline{8-9}
-          & \(\mathcal{J}(\%)\) & \(\mathcal{F}\) && \(\mathcal{J}(\%)\) & \(\mathcal{F}\)&& \(\mathcal{J}(\%)\) & \(\mathcal{F}\) & \(\mathcal{S}(\downarrow)\)\\
-          \midrule
-          \textcircled{\scriptsize{1}} TSAM&\textbf{43.43}&0.568&&\textbf{54.58}&\textbf{0.664}&&\textbf{49.01}&\textbf{0.616}&0.017\\
-          \textcircled{\scriptsize{2}}\enspace-- TB&33.05&0.507&&50.48&0.657&&41.77&0.582&0.505\\
-          \textcircled{\scriptsize{3}}\enspace-- TMFL&40.35&0.579&&45.54&0.627&&42.95&0.603&0.018\\
-          
-          \textcircled{\scriptsize{4}}\enspace-- DPM&42.72&0.580&&49.10& 0.647&&45.91&0.614&0.018\\
-          \textcircled{\scriptsize{5}}\enspace-- SPM&43.04&0.580&&49.75&0.652&&46.40&\textbf{0.616}&0.018\\
-          \textcircled{\scriptsize{6}}\enspace-- SPM+DPM&42.60&0.602&&40.58&0.604&&41.59&0.603&0.018\\
-          \textcircled{\scriptsize{7}}\enspace-- CM(a+v)&42.07&0.544&&49.11&0.659&&45.59&0.602&0.018\\
-          \textcircled{\scriptsize{8}}\enspace-- CM(v)&42.75&0.549&&51.18&0.660&&46.97&0.605&0.018\\
-          \textcircled{\scriptsize{9}}\enspace-- AM&43.13&\textbf{0.600}&&40.79&0.617&&41.96&0.609&0.017\\
-          \hline
-          \textcircled{\scriptsize{10}}\enspace-- \(\mathcal{L}_{\text{IoU}}\)&38.29&0.564&&42.15&0.631&&40.22&0.598&\textbf{0.008}\\
-          \bottomrule
-        \end{tabular}}
-        \caption{Ablation study on TSAM components and \(\mathcal{L}_{IoU}\) loss. 'Mix' refers to the average performance on the Seen (S) and Unseen (U) test sets.}
-        \label{tab:tab2}
-      \end{table}
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <caption>Ablation study on TSAM components and 𝓛<sub>IoU</sub> loss. 'Mix' refers to the average performance on the Seen (S) and Unseen (U) test sets.</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Setting</th>
+            <th colspan="2">Seen</th>
+            <th></th>
+            <th colspan="2">Unseen</th>
+            <th></th>
+            <th colspan="2">Mix (S+U)</th>
+            <th>Null</th>
+          </tr>
+          <tr>
+            <th>𝒥(%)</th>
+            <th>𝒜ℱ</th>
+            <th></th>
+            <th>𝒥(%)</th>
+            <th>𝒜ℱ</th>
+            <th></th>
+            <th>𝒥(%)</th>
+            <th>𝒜ℱ</th>
+            <th>𝒮(↓)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>① TSAM</td><td><b>43.43</b></td><td>0.568</td><td></td><td><b>54.58</b></td><td><b>0.664</b></td><td></td><td><b>49.01</b></td><td><b>0.616</b></td><td>0.017</td></tr>
+          <tr><td>② -- TB</td><td>33.05</td><td>0.507</td><td></td><td>50.48</td><td>0.657</td><td></td><td>41.77</td><td>0.582</td><td>0.505</td></tr>
+          <tr><td>③ -- TMFL</td><td>40.35</td><td>0.579</td><td></td><td>45.54</td><td>0.627</td><td></td><td>42.95</td><td>0.603</td><td>0.018</td></tr>
+          <tr><td>④ -- DPM</td><td>42.72</td><td>0.580</td><td></td><td>49.10</td><td>0.647</td><td></td><td>45.91</td><td>0.614</td><td>0.018</td></tr>
+          <tr><td>⑤ -- SPM</td><td>43.04</td><td>0.580</td><td></td><td>49.75</td><td>0.652</td><td></td><td>46.40</td><td><b>0.616</b></td><td>0.018</td></tr>
+          <tr><td>⑥ -- SPM+DPM</td><td>42.60</td><td>0.602</td><td></td><td>40.58</td><td>0.604</td><td></td><td>41.59</td><td>0.603</td><td>0.018</td></tr>
+          <tr><td>⑦ -- CM(a+v)</td><td>42.07</td><td>0.544</td><td></td><td>49.11</td><td>0.659</td><td></td><td>45.59</td><td>0.602</td><td>0.018</td></tr>
+          <tr><td>⑧ -- CM(v)</td><td>42.75</td><td>0.549</td><td></td><td>51.18</td><td>0.660</td><td></td><td>46.97</td><td>0.605</td><td>0.018</td></tr>
+          <tr><td>⑨ -- AM</td><td>43.13</td><td><b>0.600</b></td><td></td><td>40.79</td><td>0.617</td><td></td><td>41.96</td><td>0.609</td><td>0.017</td></tr>
+          <tr><td>⑩ -- 𝓛<sub>IoU</sub></td><td>38.29</td><td>0.564</td><td></td><td>42.15</td><td>0.631</td><td></td><td>40.22</td><td>0.598</td><td><b>0.008</b></td></tr>
+        </tbody>
+      </table>
+
 
       <div class="table-container" style="margin-top: 1rem;">
         <p><em>[Insert converted LaTeX table here, e.g., as an image or HTML table]</em></p>
