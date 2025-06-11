@@ -163,28 +163,31 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <h2 class="title">Pipeline</h2>
-        <p>An overview of the proposed framework is illustrated in the figure below.</p>
-        <img src="static/images/pipeline.jpg" alt="pipeline" style="width:60%; height:60%;">
-        <p>Details can be found in the <a href="path_to_paper.pdf">paper</a>.</p>
+      <div class="columns is-centered">
+        <div class="column is-half has-text-centered">
+          <h2 class="title">Pipeline</h2>
+          <p>An overview of the proposed framework is illustrated in the figure below.</p>
+          <img src="static/images/pipeline.jpg" alt="pipeline" style="width:60%; height:60%;">
+          <p>Details can be found in the <a href="path_to_paper.pdf">paper</a>.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End pipeline -->
 
+
 <!-- Experiments -->
 <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container has-text-centered">
       <h2 class="title">Experiments</h2>
 
       <p>We evaluated TSAM on the <a href="https://gewu-lab.github.io/Ref-AVS/" style="color: blue;">Ref-AVS dataset</a>, which contains 20,000 text expressions with pixel-level masks across 4,000 10-second videos, covering diverse audible and inaudible objects. It includes 2,908 training, 276 validation, and 818 test videos. 
         The test set is split into <strong>Seen</strong> (292), <strong>Unseen</strong> (269), and <strong>Null</strong> (257) subsets to test generalization and robustness. As shown in the Table 1, TSAM outperforms existing methods, especially on the Unseen subset, demonstrating strong generalization to novel objects.</p>
 
-      <div style="display: flex; flex-direction: column;">
-        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+      <div style="display: inline-block; text-align: left;">
+        <table class="table is-bordered is-striped is-hoverable" style="margin: 0 auto;">
           <thead>
             <tr>
               <th rowspan="2">Method</th>
@@ -215,11 +218,13 @@
         </table>
         <div style="text-align: center; margin-top: 0.5rem;"><em>Table 1: Performance comparison on the Ref-AVS dataset. <sup>†</sup> denotes text integration in AVS from [Wang et al.], <sup>‡</sup> indicates audio integration in Ref-VOS, and * marks our implementation with text added to AVS.</em></div>
       </div>
+
       <br><br>
+
       <p>We further conducted an ablation study (Table 2) to assess the impact of each module (see the pipeline above): the temporal branch (TB), temporal modality fusion layer (TMFL), dense (DPM) and sparse (SPM) prompting modules, cached memory (CM) for audio+visual (a+v) or visual (v) only, adapter module (AM), and the LIoU loss. Each contributes to TSAM’s robust performance, especially on unseen and null cases.</p>
 
-      <div style="display: flex; flex-direction: column;">
-        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+      <div style="display: inline-block; text-align: left;">
+        <table class="table is-bordered is-striped is-hoverable" style="margin: 0 auto;">
           <thead>
             <tr>
               <th rowspan="2">Setting</th>
@@ -252,31 +257,32 @@
             <tr><td>⑦ - CM(a+v)</td><td>42.07</td><td>0.544</td><td></td><td>49.11</td><td>0.659</td><td></td><td>45.59</td><td>0.602</td><td>0.018</td></tr>
             <tr><td>⑧ - CM(v)</td><td>42.75</td><td>0.549</td><td></td><td>51.18</td><td>0.660</td><td></td><td>46.97</td><td>0.605</td><td>0.018</td></tr>
             <tr><td>⑨ - AM</td><td>43.13</td><td><b>0.600</b></td><td></td><td>40.79</td><td>0.617</td><td></td><td>41.96</td><td>0.609</td><td>0.017</td></tr>
-            <tr><td>⑩ - 𝓛<sub>IoU</sub></td><td>38.29</td><td>0.564</td><td></td><td>42.15</td><td>0.631</td><td></td><td>40.22</td><td>0.598</td><td><b>0.008</b></td></tr>
+            <tr><td>⑩ - 𝓛<sub>IoU</sub></td><td>42.65</td><td>0.579</td><td></td><td>53.16</td><td>0.660</td><td></td><td>46.91</td><td>0.619</td><td>0.018</td></tr>
           </tbody>
         </table>
-        <div style="text-align: center; margin-top: 0.5rem;"><em>Table 2: Ablation study on TSAM components and 𝓛<sub>IoU</sub> loss. 'Mix' refers to the average performance on the Seen (S) and Unseen (U) test sets.</em></div>
-      </div>
-
-      <div class="table-container" style="margin-top: 1rem;">
-        <p><em>Further discussion is provided in the paper.</em></p>
+        <div style="text-align: center; margin-top: 0.5rem;"><em>Table 2: Ablation study on TSAM components.</em></div>
       </div>
 
     </div>
   </div>
 </section>
-<!-- End Experiments -->
 
-<!-- Paper poster -->
+<!-- Poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container has-text-centered">
       <h2 class="title">Poster</h2>
-      <img src="static/images/cvpr25_poster_TSAM.png" alt="CVPR 2025 Poster" style="width:100%; height:100%;">
+
+      <p>We designed a poster showcasing TSAM, highlighting its architecture and experimental results. The poster visually presents the sparse and dense prompting modules, the temporal modeling branch, and comparison charts illustrating TSAM’s performance gain over previous methods.</p>
+
+      <figure style="margin: 0 auto; max-width: 600px;">
+        <img src="poster.png" alt="TSAM Poster" style="display: block; margin: 0 auto; width: 100%; height: auto;">
+        <figcaption style="margin-top: 0.5rem; font-style: italic;">Figure 1: Our TSAM poster.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
-<!-- End paper poster -->
+
 
 
 <!--BibTex citation -->
