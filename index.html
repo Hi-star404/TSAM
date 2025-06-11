@@ -212,13 +212,13 @@
           </thead>
           <tbody>
             <tr><td style="text-align: left; padding-left: 8px;">AVSBench</td><td>AVS<sup>†</sup></td><td>PVT-v2</td><td>23.20</td><td>0.511</td><td>32.36</td><td>0.547</td><td>0.208</td></tr>
-            <tr><td>AVSegFormer</td><td>AVS<sup>†</sup></td><td>PVT-v2</td><td>33.47</td><td>0.470</td><td>36.05</td><td>0.501</td><td>0.171</td></tr>
-            <tr><td>GAVS</td><td>AVS<sup>†</sup></td><td>SAM</td><td>28.93</td><td>0.498</td><td>29.82</td><td>0.497</td><td>0.190</td></tr>
-            <tr><td>SAMA</td><td>AVS<sup>*</sup></td><td>SAM</td><td><u>39.22</u></td><td><u>0.562</u></td><td>47.50</td><td>0.566</td><td>0.130</td></tr>
-            <tr><td>ReferFormer</td><td>Ref-VOS<sup>‡</sup></td><td>V-Swin</td><td>31.31</td><td>0.501</td><td>30.40</td><td>0.488</td><td>0.176</td></tr>
-            <tr><td>R2-VOS</td><td>Ref-VOS<sup>‡</sup></td><td>V-Swin</td><td>25.01</td><td>0.410</td><td>27.93</td><td>0.498</td><td>0.183</td></tr>
-            <tr><td>EEMC</td><td>Ref-AVS</td><td>M2F</td><td>34.20</td><td>0.513</td><td><u>49.54</u></td><td><u>0.648</u></td><td><b>0.007</b></td></tr>
-            <tr><td><b>TSAM (Ours)</b></td><td>Ref-AVS</td><td>SAM</td><td><b>43.43</b></td><td><b>0.568</b></td><td><b>54.58</b></td><td><b>0.664</b></td><td><u>0.017</u></td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">AVSegFormer</td><td>AVS<sup>†</sup></td><td>PVT-v2</td><td>33.47</td><td>0.470</td><td>36.05</td><td>0.501</td><td>0.171</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">GAVS</td><td>AVS<sup>†</sup></td><td>SAM</td><td>28.93</td><td>0.498</td><td>29.82</td><td>0.497</td><td>0.190</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">SAMA</td><td>AVS<sup>*</sup></td><td>SAM</td><td><u>39.22</u></td><td><u>0.562</u></td><td>47.50</td><td>0.566</td><td>0.130</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">ReferFormer</td><td>Ref-VOS<sup>‡</sup></td><td>V-Swin</td><td>31.31</td><td>0.501</td><td>30.40</td><td>0.488</td><td>0.176</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">R2-VOS</td><td>Ref-VOS<sup>‡</sup></td><td>V-Swin</td><td>25.01</td><td>0.410</td><td>27.93</td><td>0.498</td><td>0.183</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">EEMC</td><td>Ref-AVS</td><td>M2F</td><td>34.20</td><td>0.513</td><td><u>49.54</u></td><td><u>0.648</u></td><td><b>0.007</b></td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;"><b>TSAM (Ours)</b></td><td>Ref-AVS</td><td>SAM</td><td><b>43.43</b></td><td><b>0.568</b></td><td><b>54.58</b></td><td><b>0.664</b></td><td><u>0.017</u></td></tr>
           </tbody>
         </table>
         <div style="text-align: center; margin-top: 0.5rem;"><em>Table 1: Performance comparison on the Ref-AVS dataset. <sup>†</sup> denotes text integration in AVS from [Wang et al.], <sup>‡</sup> indicates audio integration in Ref-VOS, and * marks our implementation with text added to AVS.</em></div>
@@ -252,16 +252,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>① TSAM</td><td><b>43.43</b></td><td>0.568</td><td></td><td><b>54.58</b></td><td><b>0.664</b></td><td></td><td><b>49.01</b></td><td><b>0.616</b></td><td>0.017</td></tr>
-            <tr><td>② - TB</td><td>33.05</td><td>0.507</td><td></td><td>50.48</td><td>0.657</td><td></td><td>41.77</td><td>0.582</td><td>0.505</td></tr>
-            <tr><td>③ - TMFL</td><td>40.35</td><td>0.579</td><td></td><td>45.54</td><td>0.627</td><td></td><td>42.95</td><td>0.603</td><td>0.018</td></tr>
-            <tr><td>④ - DPM</td><td>42.72</td><td>0.580</td><td></td><td>49.10</td><td>0.647</td><td></td><td>45.91</td><td>0.614</td><td>0.018</td></tr>
-            <tr><td>⑤ - SPM</td><td>43.04</td><td>0.580</td><td></td><td>49.75</td><td>0.652</td><td></td><td>46.40</td><td><b>0.616</b></td><td>0.018</td></tr>
-            <tr><td>⑥ - SPM+DPM</td><td>42.60</td><td>0.602</td><td></td><td>40.58</td><td>0.604</td><td></td><td>41.59</td><td>0.603</td><td>0.018</td></tr>
-            <tr><td>⑦ - CM(a+v)</td><td>42.07</td><td>0.544</td><td></td><td>49.11</td><td>0.659</td><td></td><td>45.59</td><td>0.602</td><td>0.018</td></tr>
-            <tr><td>⑧ - CM(v)</td><td>42.75</td><td>0.549</td><td></td><td>51.18</td><td>0.660</td><td></td><td>46.97</td><td>0.605</td><td>0.018</td></tr>
-            <tr><td>⑨ - AM</td><td>43.13</td><td><b>0.600</b></td><td></td><td>40.79</td><td>0.617</td><td></td><td>41.96</td><td>0.609</td><td>0.017</td></tr>
-            <tr><td>⑩ - 𝓛<sub>IoU</sub></td><td>38.29</td><td>0.564</td><td></td><td>42.15</td><td>0.631</td><td></td><td>40.22</td><td>0.598</td><td><b>0.008</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">① TSAM</td><td><b>43.43</b></td><td>0.568</td><td></td><td><b>54.58</b></td><td><b>0.664</b></td><td></td><td><b>49.01</b></td><td><b>0.616</b></td><td>0.017</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">② - TB</td><td>33.05</td><td>0.507</td><td></td><td>50.48</td><td>0.657</td><td></td><td>41.77</td><td>0.582</td><td>0.505</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">③ - TMFL</td><td>40.35</td><td>0.579</td><td></td><td>45.54</td><td>0.627</td><td></td><td>42.95</td><td>0.603</td><td>0.018</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">④ - DPM</td><td>42.72</td><td>0.580</td><td></td><td>49.10</td><td>0.647</td><td></td><td>45.91</td><td>0.614</td><td>0.018</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">⑤ - SPM</td><td>43.04</td><td>0.580</td><td></td><td>49.75</td><td>0.652</td><td></td><td>46.40</td><td><b>0.616</b></td><td>0.018</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">⑥ - SPM+DPM</td><td>42.60</td><td>0.602</td><td></td><td>40.58</td><td>0.604</td><td></td><td>41.59</td><td>0.603</td><td>0.018</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">⑦ - CM(a+v)</td><td>42.07</td><td>0.544</td><td></td><td>49.11</td><td>0.659</td><td></td><td>45.59</td><td>0.602</td><td>0.018</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">⑧ - CM(v)</td><td>42.75</td><td>0.549</td><td></td><td>51.18</td><td>0.660</td><td></td><td>46.97</td><td>0.605</td><td>0.018</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">⑨ - AM</td><td>43.13</td><td><b>0.600</b></td><td></td><td>40.79</td><td>0.617</td><td></td><td>41.96</td><td>0.609</td><td>0.017</td></tr>
+            <tr><td style="text-align: left; padding-left: 8px;">⑩ - 𝓛<sub>IoU</sub></td><td>38.29</td><td>0.564</td><td></td><td>42.15</td><td>0.631</td><td></td><td>40.22</td><td>0.598</td><td><b>0.008</td></tr>
           </tbody>
         </table>
         <div style="text-align: center; margin-top: 0.5rem;"><em>Table 2: Ablation study on TSAM components.</em></div>
