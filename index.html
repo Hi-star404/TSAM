@@ -182,30 +182,37 @@
 
       <p>As shown in Table 1, TSAM outperforms existing methods, especially on the Unseen subset, demonstrating strong generalization to novel objects. This is attributed to TSAM’s temporal modeling and effective use of SAM's pretrained features in dynamic audio-visual contexts.</p>
 
-      \begin{table}[tb]
-        \centering
-        \scalebox{0.66}{
-        \begin{tabular}{@{}lccccccc@{}}
-          \toprule
-          \multirow{2}{*}{Method}&\multirow{2}{*}{Task}&\multirow{2}{*}{\parbox{1.5cm}{\centering Visual \\ Backbone}} & \multicolumn{2}{c}{Seen} & \multicolumn{2}{c}{Unseen} & Null\\
-          \cmidrule(lr){4-5} \cmidrule(lr){6-7}
-           & & & \(\mathcal{J}(\%)\) & \(\mathcal{F}\) & \(\mathcal{J}(\%)\) & \(\mathcal{F}\) & \(\mathcal{S}(\downarrow)\)\\
-          \midrule
-          AVSBench~\cite{zhou2022audio}&AVS\(^{\dagger}\)&PVT-v2&23.20&0.511&32.36& 0.547 &0.208\\%&ECCV 2022
-          AVSegFormer~\cite{gao2024avsegformer}&AVS\(^{\dagger}\)&PVT-v2&33.47&0.470&36.05&0.501&0.171\\%&AAAI 2024
-          GAVS~\cite{wang2024prompting}&AVS\(^{\dagger}\)&SAM&28.93&0.498&29.82&0.497&0.190\\%&AAAI 2024
-          SAMA~\cite{liu2024annotation}&AVS\(^{*}\)&SAM&\underline{39.22}&\underline{0.562}&47.50&0.566&0.130\\%&WACV 2024
-          \hline
-          ReferFormer~\cite{wu2022language}&Ref-VOS\(^{\ddagger}\)&V-Swin&31.31 &0.501 &30.40 &0.488&0.176\\%&CVPR 2022
-          R2-VOS~\cite{li2023robust}&Ref-VOS\(^{\ddagger}\)&V-Swin&25.01 &0.410 &27.93 &0.498&0.183\\%&ICCV 2023
-          \hline
-          EEMC~\cite{wang2024refavs}&Ref-AVS&M2F&34.20 &0.513 &\underline{49.54} &\underline{0.648}&\textbf{0.007}\\%&ECCV 2024
-          TSAM (Ours)&Ref-AVS&SAM&\textbf{43.43}&\textbf{0.568}&\textbf{54.58}&\textbf{0.664}&\underline{0.017}\\%&CVPR 2025
-          \bottomrule
-        \end{tabular}}
-        \caption{Performance comparison on the Ref-AVS dataset. \(^\dagger\) denotes text integration in AVS from~\cite{wang2024refavs}, \(^\ddagger\) indicates audio integration in Ref-VOS from~\cite{wang2024refavs}, and * marks our implementation with text added to AVS.}
-        \label{tab:tab1}
-      \end{table}
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <caption>Performance comparison on the Ref-AVS dataset. <sup>†</sup> denotes text integration in AVS from [Wang et al.], <sup>‡</sup> indicates audio integration in Ref-VOS, and * marks our implementation with text added to AVS.</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Method</th>
+            <th rowspan="2">Task</th>
+            <th rowspan="2">Visual Backbone</th>
+            <th colspan="2">Seen</th>
+            <th colspan="2">Unseen</th>
+            <th>Null</th>
+          </tr>
+          <tr>
+            <th>𝒥(%)</th>
+            <th>𝒜ℱ</th>
+            <th>𝒥(%)</th>
+            <th>𝒜ℱ</th>
+            <th>𝒮(↓)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>AVSBench</td><td>AVS<sup>†</sup></td><td>PVT-v2</td><td>23.20</td><td>0.511</td><td>32.36</td><td>0.547</td><td>0.208</td></tr>
+          <tr><td>AVSegFormer</td><td>AVS<sup>†</sup></td><td>PVT-v2</td><td>33.47</td><td>0.470</td><td>36.05</td><td>0.501</td><td>0.171</td></tr>
+          <tr><td>GAVS</td><td>AVS<sup>†</sup></td><td>SAM</td><td>28.93</td><td>0.498</td><td>29.82</td><td>0.497</td><td>0.190</td></tr>
+          <tr><td>SAMA</td><td>AVS<sup>*</sup></td><td>SAM</td><td><u>39.22</u></td><td><u>0.562</u></td><td>47.50</td><td>0.566</td><td>0.130</td></tr>
+          <tr><td>ReferFormer</td><td>Ref-VOS<sup>‡</sup></td><td>V-Swin</td><td>31.31</td><td>0.501</td><td>30.40</td><td>0.488</td><td>0.176</td></tr>
+          <tr><td>R2-VOS</td><td>Ref-VOS<sup>‡</sup></td><td>V-Swin</td><td>25.01</td><td>0.410</td><td>27.93</td><td>0.498</td><td>0.183</td></tr>
+          <tr><td>EEMC</td><td>Ref-AVS</td><td>M2F</td><td>34.20</td><td>0.513</td><td><u>49.54</u></td><td><u>0.648</u></td><td><b>0.007</b></td></tr>
+          <tr><td><b>TSAM (Ours)</b></td><td>Ref-AVS</td><td>SAM</td><td><b>43.43</b></td><td><b>0.568</b></td><td><b>54.58</b></td><td><b>0.664</b></td><td><u>0.017</u></td></tr>
+        </tbody>
+      </table>
+
 
       <p>We further conducted an ablation study (Table 2) to assess the impact of each module: the temporal branch (TB), temporal modality fusion layer (TMFL), dense (DPM) and sparse (SPM) prompting modules, cached memory (CM) for audio+visual (a+v) or visual (v) only, adapter module (AM), and the LIoU loss. Each contributes to TSAM’s robust performance, especially on unseen and null cases.</p>
 
