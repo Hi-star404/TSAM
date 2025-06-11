@@ -165,13 +165,89 @@
     <div class="container">
       <h2 class="title">Pipeline</h2>
       <p>An overview of the proposed framework is illustrated in the figure below.</p>
-      <img src="static/images/pipeline.jpg" alt="pipeline" style="width:40%; height:40%;">
+      <img src="static/images/pipeline.jpg" alt="pipeline" style="width:60%; height:60%;">
       <p>Details can be found in the <a href="path_to_paper.pdf">paper</a>.</p>
     </div>
   </div>
 </section>
 <!-- End pipeline -->
 
+<!-- Experiments -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Experiments</h2>
+
+      <p>We evaluated TSAM on the <a href="[ADD_LINK_HERE]">Ref-AVS dataset</a>, which contains 20,000 text expressions with pixel-level masks across 4,000 10-second videos, covering diverse audible and inaudible objects. It includes 2,908 training, 276 validation, and 818 test videos. The test set is split into <strong>Seen</strong> (292), <strong>Unseen</strong> (269), and <strong>Null</strong> (257) subsets to test generalization and robustness.</p>
+
+      <p>As shown in Table 1, TSAM outperforms existing methods, especially on the Unseen subset, demonstrating strong generalization to novel objects. This is attributed to TSAM’s temporal modeling and effective use of SAM's pretrained features in dynamic audio-visual contexts.</p>
+
+      \begin{table}[tb]
+        \centering
+        \scalebox{0.66}{
+        \begin{tabular}{@{}lccccccc@{}}
+          \toprule
+          \multirow{2}{*}{Method}&\multirow{2}{*}{Task}&\multirow{2}{*}{\parbox{1.5cm}{\centering Visual \\ Backbone}} & \multicolumn{2}{c}{Seen} & \multicolumn{2}{c}{Unseen} & Null\\
+          \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+           & & & \(\mathcal{J}(\%)\) & \(\mathcal{F}\) & \(\mathcal{J}(\%)\) & \(\mathcal{F}\) & \(\mathcal{S}(\downarrow)\)\\
+          \midrule
+          AVSBench~\cite{zhou2022audio}&AVS\(^{\dagger}\)&PVT-v2&23.20&0.511&32.36& 0.547 &0.208\\%&ECCV 2022
+          AVSegFormer~\cite{gao2024avsegformer}&AVS\(^{\dagger}\)&PVT-v2&33.47&0.470&36.05&0.501&0.171\\%&AAAI 2024
+          GAVS~\cite{wang2024prompting}&AVS\(^{\dagger}\)&SAM&28.93&0.498&29.82&0.497&0.190\\%&AAAI 2024
+          SAMA~\cite{liu2024annotation}&AVS\(^{*}\)&SAM&\underline{39.22}&\underline{0.562}&47.50&0.566&0.130\\%&WACV 2024
+          \hline
+          ReferFormer~\cite{wu2022language}&Ref-VOS\(^{\ddagger}\)&V-Swin&31.31 &0.501 &30.40 &0.488&0.176\\%&CVPR 2022
+          R2-VOS~\cite{li2023robust}&Ref-VOS\(^{\ddagger}\)&V-Swin&25.01 &0.410 &27.93 &0.498&0.183\\%&ICCV 2023
+          \hline
+          EEMC~\cite{wang2024refavs}&Ref-AVS&M2F&34.20 &0.513 &\underline{49.54} &\underline{0.648}&\textbf{0.007}\\%&ECCV 2024
+          TSAM (Ours)&Ref-AVS&SAM&\textbf{43.43}&\textbf{0.568}&\textbf{54.58}&\textbf{0.664}&\underline{0.017}\\%&CVPR 2025
+          \bottomrule
+        \end{tabular}}
+        \caption{Performance comparison on the Ref-AVS dataset. \(^\dagger\) denotes text integration in AVS from~\cite{wang2024refavs}, \(^\ddagger\) indicates audio integration in Ref-VOS from~\cite{wang2024refavs}, and * marks our implementation with text added to AVS.}
+        \label{tab:tab1}
+      \end{table}
+
+      <p>We further conducted an ablation study (Table 2) to assess the impact of each module: the temporal branch (TB), temporal modality fusion layer (TMFL), dense (DPM) and sparse (SPM) prompting modules, cached memory (CM) for audio+visual (a+v) or visual (v) only, adapter module (AM), and the LIoU loss. Each contributes to TSAM’s robust performance, especially on unseen and null cases.</p>
+
+      \begin{table}[bb]
+        \centering
+        \scalebox{0.65}{
+        \begin{tabular}{@{}lcccccccccc@{}}
+          \toprule
+          \multirow{2}{*}{Setting}& \multicolumn{2}{c}{Seen} && \multicolumn{2}{c}{Unseen} && \multicolumn{2}{c}{Mix(S+U)} &Null\\
+          \cline{2-3}\cline{5-6}\cline{8-9}
+          & \(\mathcal{J}(\%)\) & \(\mathcal{F}\) && \(\mathcal{J}(\%)\) & \(\mathcal{F}\)&& \(\mathcal{J}(\%)\) & \(\mathcal{F}\) & \(\mathcal{S}(\downarrow)\)\\
+          \midrule
+          \textcircled{\scriptsize{1}} TSAM&\textbf{43.43}&0.568&&\textbf{54.58}&\textbf{0.664}&&\textbf{49.01}&\textbf{0.616}&0.017\\
+          \textcircled{\scriptsize{2}}\enspace-- TB&33.05&0.507&&50.48&0.657&&41.77&0.582&0.505\\
+          \textcircled{\scriptsize{3}}\enspace-- TMFL&40.35&0.579&&45.54&0.627&&42.95&0.603&0.018\\
+          
+          \textcircled{\scriptsize{4}}\enspace-- DPM&42.72&0.580&&49.10& 0.647&&45.91&0.614&0.018\\
+          \textcircled{\scriptsize{5}}\enspace-- SPM&43.04&0.580&&49.75&0.652&&46.40&\textbf{0.616}&0.018\\
+          \textcircled{\scriptsize{6}}\enspace-- SPM+DPM&42.60&0.602&&40.58&0.604&&41.59&0.603&0.018\\
+          \textcircled{\scriptsize{7}}\enspace-- CM(a+v)&42.07&0.544&&49.11&0.659&&45.59&0.602&0.018\\
+          \textcircled{\scriptsize{8}}\enspace-- CM(v)&42.75&0.549&&51.18&0.660&&46.97&0.605&0.018\\
+          \textcircled{\scriptsize{9}}\enspace-- AM&43.13&\textbf{0.600}&&40.79&0.617&&41.96&0.609&0.017\\
+          \hline
+          \textcircled{\scriptsize{10}}\enspace-- \(\mathcal{L}_{\text{IoU}}\)&38.29&0.564&&42.15&0.631&&40.22&0.598&\textbf{0.008}\\
+          \bottomrule
+        \end{tabular}}
+        \caption{Ablation study on TSAM components and \(\mathcal{L}_{IoU}\) loss. 'Mix' refers to the average performance on the Seen (S) and Unseen (U) test sets.}
+        \label{tab:tab2}
+      \end{table}
+
+      <div class="table-container" style="margin-top: 1rem;">
+        <p><em>[Insert converted LaTeX table here, e.g., as an image or HTML table]</em></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Experiments -->
+
+
+
+  
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
