@@ -1,0 +1,290 @@
+#======method setting======
+
+model:
+
+  framework: vlm #vlm or vm
+
+  method: c2c_enhance
+
+  text_encoding_manner: component #composition, component, c2c_vanilla, c2c_enhance
+
+  backbone: "ViT-B/32"
+
+
+
+text:
+
+  text_input_type: template #vanilla:v+o,template: text template+v+o, :[P1,P2,P3], VERB, [P4,P5,P6,P7],OBJECT, [P8,P9,P10,P11],
+
+#  input_template: "An action of which the dominating object is x and the verb is x" #valid if text_input_type is template
+
+  input_template_verb: "A verb of  x" #valid
+
+  input_template_obj: "An object of  x" #valid
+
+#  input_template: "The x is subjected to the x"
+
+  learn_input: true # if false, no prompt learning
+
+  learn_input_method: coop #coop,csp or dfsp #valid if learn_input is true
+
+  verb_length_type: natural # one or natural ##### maybe useless!
+
+  ctx_init: true #initialization for ctx. valid if learn_input is true
+
+  #===train===
+
+  text_lr: 0.0001
+
+  text_wd: 0.00001
+
+  ctx_length: 10
+
+
+
+
+
+data:
+
+  dataset: sth-com
+
+  #set as your own path
+
+  dataset_path: "/home/bjjiang25/CZSL_1/frames/"
+
+  num_frames: 8
+
+  num_workers: 16
+
+  # Match the two CPU cores assigned to the current Slurm job.
+
+  dataloader_safe_mode: false
+
+
+
+#======compositional module setting======
+
+c2c:
+
+  nlayers: 2
+
+  fc_emb: 768,1024,1200
+
+  feat_dim: 512
+
+  emb_dim: 300
+
+  relu: False
+
+  # Residual boosting: proven floor (full-grad shaper + detached evidence)
+
+  # plus proposal CE that trains the evidence head to fix global's errors.
+
+  # Deployment fusion (0.15/0.10) is identical to the training proposal.
+
+  temporal_expert_enabled: false
+
+  temporal_composition_enabled: true
+
+  temporal_composition_kernel_sizes: 3,5,7,9
+
+  temporal_composition_temperature: 4.0
+
+  temporal_composition_gate_prior: 0.1,0.15,0.35,0.4
+
+  temporal_composition_gate_norm: false
+
+  temporal_composition_gate_residual_scale: null
+
+  temporal_composition_route_loss_weight: 0.02
+
+  temporal_composition_seed_offset: 104729
+
+  temporal_composition_feature_residual: 0.05
+
+  temporal_composition_detach_backbone: false
+
+  # Evidence path: detach shared backbone (floor 塑主干).
+
+  temporal_composition_backbone_gradient_scale: 0.0
+
+  # Unused when independent relation shaper is enabled.
+
+  temporal_relation_backbone_gradient_scale: 1.0
+
+  # Independent "1"-style shaper: full gradient into shared trunk.
+
+  temporal_relation_shaper_enabled: true
+
+  temporal_shaper_loss_weight: 0.50
+
+  temporal_shaper_projection_hidden_dim: 128
+
+  temporal_shaper_projection_dropout: 0.1
+
+  # Hard mining retired: residual boosting handles error focus softly.
+
+  temporal_shaper_hard_mining_enabled: false
+
+  temporal_shaper_hard_weight: 1.0
+
+  temporal_shaper_easy_weight: 0.05
+
+  natural_pair_context_length: 48
+
+  natural_pair_text_batch_size: 256
+
+  natural_pair_projection_hidden_dim: 128
+
+  natural_pair_projection_dropout: 0.1
+
+  # Train global path without fusion; boosting CE covers the fused view.
+
+  natural_pair_fuse_during_training: false
+
+  # Infer with the same fixed fusion the boosting CE was trained on.
+
+  natural_pair_fuse_at_inference: true
+
+  natural_pair_selective_fuse_at_inference: false
+
+  natural_pair_selective_margin_threshold: 0.005
+
+  natural_pair_verb_feedback_strength: 0.15
+
+  natural_pair_object_feedback_strength: 0.10
+
+  natural_pair_prompt_weights: 0.25,0.25,0.50
+
+  natural_pair_decomposition_iterations: 8
+
+  natural_pair_decomposition_ridge: 0.001
+
+  natural_pair_component_loss_weight: 0.15
+
+  natural_pair_verb_component_loss_weight: 0.70
+
+  natural_pair_object_component_loss_weight: 0.30
+
+  natural_pair_component_logit_scale: 50.0
+
+  # Residual boosting CE on the fixed-alpha proposal (evidence head only).
+
+  natural_pair_feedback_loss_weight: 0.30
+
+  temporal_gradient_clip: 5.0
+
+  use_gse: true
+
+  gse_position: pre_fusion_cond_only
+
+  gse_heads: 4
+
+  gse_dropout: 0.1
+
+  gse_alpha_init: 0.05
+
+  gse_beta_init: 0.05
+
+  branch_alignment_enabled: false
+
+  use_mmn_spatial_refiner: true
+
+  mmn_spatial_bottleneck_dim: 128
+
+  mmn_spatial_dropout: 0.15
+
+  mmn_spatial_residual_init: 0.05
+
+  condition_loss_weight: 0.05
+
+
+
+#======visual encoder setting======
+
+visual:
+
+  pretrained: CLIP
+
+  num_frames: 8
+
+  adapt_star_layer: 6
+
+  num_tadapter: 2
+
+  cosine_scale: 100
+
+  visual_lr: 0.0005
+
+  visual_wd: 0.0001
+
+
+
+code_adapt:
+
+  arch: vit
+
+  aux_input: False
+
+  ade_input: False
+
+
+
+
+
+#======general training setting======
+
+train:
+
+  train_batch_size: 64
+
+  gradient_accumulation_steps: 1
+
+  seed: 0
+
+  epochs: 50
+
+  val_epochs_ts: 45
+
+  warmup: 3
+
+  epoch_start: 0
+
+  save_path: '/home/bjjiang25/CZSL_1/logs/c2c_residual_boost_shaper_fuse_a015010'
+
+  load_model: False
+
+  # Primary: AUC; also watch best_seen / best_unseen / best_hm.
+
+  best_model_metric: AUC     #best_unseen  best_seen AUC best_loss best_hm
+
+  eval_every_n: 5
+
+  save_every_n: 5
+
+  aux_input: False
+
+  ade_input: False
+
+  cutmix_prob: 0.7
+
+  beta: 1.0
+
+
+
+test:
+
+  eval_batch_size: 32
+
+  open_world: False
+
+  topk: 1
+
+  text_encoder_batch_size: 36
+
+  bias: 0.001
+
+  pretrain: False
+
+  load_model:  YOUR_PATH
+
