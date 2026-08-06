@@ -1,0 +1,1189 @@
+
+epoch 1 train loss 13.536630164074296
+epoch 1 train seconds 702.33
+epoch 1 AMP nonfinite temporal gradient steps 0
+epoch 1 com loss 7.460389292741022
+epoch 1 vv loss 4.602431768529556
+epoch 1 oo loss 3.856913417126952
+epoch 1 hsic_v loss 0.5252778785569328
+epoch 1 hsic_o loss 0.2782287540806442
+epoch 1 hsic_vo loss 0.12239722115527682
+epoch 1 con_train loss 3.401460416777795
+epoch 1 natural feedback/component/route/shaper loss 0.000000/4.722225/0.000109/6.826745
+epoch 1 natural component verb/object loss 4.729017/4.706377 | hard margin -1.042162/-0.702746 | component top1 0.046078/0.170279
+epoch 1 natural pair score std/component evidence abs 0.016347/0.002354 | feedback scale 0.013433 | residual abs 0.000302
+epoch 1 natural pair top1 agreement 0.059217 | fixed feedback strength 0.000000 | raw verb/object evidence 0.009829/0.007811
+epoch 1 temporal rescue/damage/net 0.006738/0.005268/0.001469 | disagreement 0.267329
+epoch 1 temporal proposal rescue/damage/net 0.006738/0.005268/0.001469
+epoch 1 temporal gate entropy 1.247721 | max 0.404009
+epoch 1 temporal gate mean k3:0.100624 | k5:0.150366 | k7:0.348806 | k9:0.400205
+epoch 1 temporal gate min/mean/max k3:0.079266/0.100624/0.133307 | k5:0.098602/0.150366/0.253963 | k7:0.273046/0.348806/0.431520 | k9:0.183459/0.400205/0.548346
+epoch 1 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.2943| best_seen  0.1295| AUC  0.0261| best_hm  0.11| attr_acc  0.1318| obj_acc  0.477| ub_seen  0.1243| ub_unseen  0.0347| ub_all  0.0634| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0087| temporal_damage  0.0107| temporal_disagreement  0.23| temporal_proposal_rescue  0.0087| temporal_proposal_damage  0.0107| temporal_pair_residual_abs  0.0032| natural_pair_feedback_scale  0.0177| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0236| natural_pair_evidence_abs  0.0032| natural_pair_top1_agreement  0.1777| natural_pair_verb_effect_abs  0.0143| natural_pair_object_effect_abs  0.0105| temporal_object_prediction_preservation  0.933| temporal_only_verb_change  0.163| temporal_only_object_change  0.0187| temporal_both_change  0.0483| temporal_net_gain  -0.002| temporal_proposal_net_gain  -0.002| temporal_expert_k3_mean  0.0999| temporal_expert_k5_mean  0.1466| temporal_expert_k7_mean  0.3379| temporal_expert_k9_mean  0.4156| 
+Validation Loss average: 8.474778175354004
+find best!
+
+best_unseen  0.1647| best_seen  0.1397| AUC  0.0182| best_hm  0.1109| attr_acc  0.1303| obj_acc  0.4328| ub_seen  0.1349| ub_unseen  0.0416| ub_all  0.0742| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0104| temporal_damage  0.0076| temporal_disagreement  0.2443| temporal_proposal_rescue  0.0104| temporal_proposal_damage  0.0076| temporal_pair_residual_abs  0.0032| natural_pair_feedback_scale  0.0177| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0235| natural_pair_evidence_abs  0.0032| natural_pair_top1_agreement  0.1461| natural_pair_verb_effect_abs  0.0143| natural_pair_object_effect_abs  0.0105| temporal_object_prediction_preservation  0.9249| temporal_only_verb_change  0.1693| temporal_only_object_change  0.0199| temporal_both_change  0.0552| temporal_net_gain  0.0028| temporal_proposal_net_gain  0.0028| temporal_expert_k3_mean  0.0995| temporal_expert_k5_mean  0.1455| temporal_expert_k7_mean  0.3377| temporal_expert_k9_mean  0.4173| 
+Test Loss average: 8.480419158935547
+
+
+epoch 2 train loss 12.058837473893366
+epoch 2 train seconds 709.35
+epoch 2 AMP nonfinite temporal gradient steps 0
+epoch 2 com loss 6.664303825282249
+epoch 2 vv loss 4.16845337883765
+epoch 2 oo loss 3.3680823169836476
+epoch 2 hsic_v loss 0.5148130897213431
+epoch 2 hsic_o loss 0.40787758529186247
+epoch 2 hsic_vo loss 0.10704127169143753
+epoch 2 con_train loss 3.1520322527204243
+epoch 2 natural feedback/component/route/shaper loss 0.000000/4.198879/0.010746/5.993210
+epoch 2 natural component verb/object loss 4.191379/4.216379 | hard margin -1.384053/-0.958848 | component top1 0.119276/0.245728
+epoch 2 natural pair score std/component evidence abs 0.026393/0.002734 | feedback scale 0.015387 | residual abs 0.000351
+epoch 2 natural pair top1 agreement 0.161639 | fixed feedback strength 0.000000 | raw verb/object evidence 0.015951/0.011648
+epoch 2 temporal rescue/damage/net 0.010542/0.007717/0.002825 | disagreement 0.206740
+epoch 2 temporal proposal rescue/damage/net 0.010542/0.007717/0.002825
+epoch 2 temporal gate entropy 1.031711 | max 0.564774
+epoch 2 temporal gate mean k3:0.097829 | k5:0.151910 | k7:0.340126 | k9:0.410135
+epoch 2 temporal gate min/mean/max k3:0.005151/0.097829/0.218607 | k5:0.000419/0.151910/0.987417 | k7:0.007429/0.340126/0.719633 | k9:0.000003/0.410135/0.945553
+epoch 2 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 3 train loss 11.355336370387999
+epoch 3 train seconds 707.82
+epoch 3 AMP nonfinite temporal gradient steps 0
+epoch 3 com loss 6.286856696585647
+epoch 3 vv loss 3.879551459961579
+epoch 3 oo loss 3.2102343599335486
+epoch 3 hsic_v loss 0.4961813547280656
+epoch 3 hsic_o loss 0.40045790379287816
+epoch 3 hsic_vo loss 0.07041018533856928
+epoch 3 con_train loss 3.187549328202961
+epoch 3 natural feedback/component/route/shaper loss 0.000000/3.952692/0.020377/5.602257
+epoch 3 natural component verb/object loss 3.916770/4.036512 | hard margin -1.372435/-0.998106 | component top1 0.164560/0.279456
+epoch 3 natural pair score std/component evidence abs 0.028739/0.002903 | feedback scale 0.016349 | residual abs 0.000372
+epoch 3 natural pair top1 agreement 0.218079 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017132/0.012545
+epoch 3 temporal rescue/damage/net 0.011201/0.008290/0.002911 | disagreement 0.187334
+epoch 3 temporal proposal rescue/damage/net 0.011201/0.008290/0.002911
+epoch 3 temporal gate entropy 0.834995 | max 0.663963
+epoch 3 temporal gate mean k3:0.095723 | k5:0.153192 | k7:0.338915 | k9:0.412171
+epoch 3 temporal gate min/mean/max k3:0.000780/0.095723/0.345759 | k5:0.000015/0.153192/0.998306 | k7:0.000713/0.338915/0.878269 | k9:0.000000/0.412171/0.991228
+epoch 3 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 4 train loss 10.942331082480294
+epoch 4 train seconds 702.99
+epoch 4 AMP nonfinite temporal gradient steps 0
+epoch 4 com loss 6.066728441254432
+epoch 4 vv loss 3.685228223560237
+epoch 4 oo loss 3.1327589055069356
+epoch 4 hsic_v loss 0.4755240928225157
+epoch 4 hsic_o loss 0.3351731407166529
+epoch 4 hsic_vo loss 0.03916743101880831
+epoch 4 con_train loss 3.3297588957457984
+epoch 4 natural feedback/component/route/shaper loss 0.000000/3.815104/0.023282/5.375599
+epoch 4 natural component verb/object loss 3.768339/3.924222 | hard margin -1.335324/-0.964289 | component top1 0.189472/0.301964
+epoch 4 natural pair score std/component evidence abs 0.029497/0.002977 | feedback scale 0.016851 | residual abs 0.000382
+epoch 4 natural pair top1 agreement 0.240920 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017449/0.012801
+epoch 4 temporal rescue/damage/net 0.013648/0.009908/0.003740 | disagreement 0.183004
+epoch 4 temporal proposal rescue/damage/net 0.013648/0.009908/0.003740
+epoch 4 temporal gate entropy 0.771175 | max 0.687340
+epoch 4 temporal gate mean k3:0.094318 | k5:0.151495 | k7:0.339904 | k9:0.414283
+epoch 4 temporal gate min/mean/max k3:0.000080/0.094318/0.599645 | k5:0.000000/0.151495/0.999787 | k7:0.000065/0.339904/0.947438 | k9:0.000000/0.414283/0.998683
+epoch 4 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 5 train loss 10.434528264278123
+epoch 5 train seconds 708.39
+epoch 5 AMP nonfinite temporal gradient steps 0
+epoch 5 com loss 5.801009926275045
+epoch 5 vv loss 3.460035485580188
+epoch 5 oo loss 3.0224518365218858
+epoch 5 hsic_v loss 0.3918679862964053
+epoch 5 hsic_o loss 0.20553472005143886
+epoch 5 hsic_vo loss 0.014713309331945762
+epoch 5 con_train loss 3.115628999020873
+epoch 5 natural feedback/component/route/shaper loss 0.000000/3.709114/0.022633/5.126416
+epoch 5 natural component verb/object loss 3.645626/3.857253 | hard margin -1.289706/-0.936115 | component top1 0.213614/0.317144
+epoch 5 natural pair score std/component evidence abs 0.029833/0.003048 | feedback scale 0.017330 | residual abs 0.000391
+epoch 5 natural pair top1 agreement 0.260420 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017549/0.012900
+epoch 5 temporal rescue/damage/net 0.013309/0.011134/0.002175 | disagreement 0.172021
+epoch 5 temporal proposal rescue/damage/net 0.013309/0.011134/0.002175
+epoch 5 temporal gate entropy 0.771531 | max 0.676148
+epoch 5 temporal gate mean k3:0.095050 | k5:0.152351 | k7:0.342708 | k9:0.409891
+epoch 5 temporal gate min/mean/max k3:0.000001/0.095050/0.854042 | k5:0.000000/0.152351/0.999998 | k7:0.000001/0.342708/0.985523 | k9:0.000000/0.409891/0.999882
+epoch 5 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 6 train loss 10.106430586646585
+epoch 6 train seconds 709.32
+epoch 6 AMP nonfinite temporal gradient steps 0
+epoch 6 com loss 5.642165772253725
+epoch 6 vv loss 3.323501173388056
+epoch 6 oo loss 2.944196354441282
+epoch 6 hsic_v loss 0.29816409259283244
+epoch 6 hsic_o loss 0.14754690623083033
+epoch 6 hsic_vo loss 0.006347027405345139
+epoch 6 con_train loss 2.7950214594352145
+epoch 6 natural feedback/component/route/shaper loss 0.000000/3.640475/0.019187/4.958627
+epoch 6 natural component verb/object loss 3.565749/3.814834 | hard margin -1.241233/-0.915477 | component top1 0.232293/0.326295
+epoch 6 natural pair score std/component evidence abs 0.029999/0.003067 | feedback scale 0.017495 | residual abs 0.000394
+epoch 6 natural pair top1 agreement 0.273526 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017608/0.012924
+epoch 6 temporal rescue/damage/net 0.013680/0.012907/0.000774 | disagreement 0.164896
+epoch 6 temporal proposal rescue/damage/net 0.013680/0.012907/0.000774
+epoch 6 temporal gate entropy 0.740109 | max 0.685843
+epoch 6 temporal gate mean k3:0.096821 | k5:0.148724 | k7:0.345229 | k9:0.409226
+epoch 6 temporal gate min/mean/max k3:0.000000/0.096821/0.939241 | k5:0.000000/0.148724/1.000000 | k7:0.000000/0.345229/0.998435 | k9:0.000000/0.409226/0.999981
+epoch 6 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.5195| best_seen  0.3007| AUC  0.1325| best_hm  0.2938| attr_acc  0.4032| obj_acc  0.5164| ub_seen  0.2866| ub_unseen  0.2144| ub_all  0.2375| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0167| temporal_damage  0.0221| temporal_disagreement  0.1608| temporal_proposal_rescue  0.0167| temporal_proposal_damage  0.0221| temporal_pair_residual_abs  0.0042| natural_pair_feedback_scale  0.0241| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.034| natural_pair_evidence_abs  0.0042| natural_pair_top1_agreement  0.2751| natural_pair_verb_effect_abs  0.0207| natural_pair_object_effect_abs  0.0131| temporal_object_prediction_preservation  0.9298| temporal_only_verb_change  0.0906| temporal_only_object_change  0.0324| temporal_both_change  0.0378| temporal_net_gain  -0.0054| temporal_proposal_net_gain  -0.0054| temporal_expert_k3_mean  0.0469| temporal_expert_k5_mean  0.1251| temporal_expert_k7_mean  0.2754| temporal_expert_k9_mean  0.5526| 
+Validation Loss average: 8.426816940307617
+find best!
+
+best_unseen  0.4091| best_seen  0.3284| AUC  0.1135| best_hm  0.281| attr_acc  0.3973| obj_acc  0.4933| ub_seen  0.3126| ub_unseen  0.18| ub_all  0.2263| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0157| temporal_damage  0.0165| temporal_disagreement  0.1647| temporal_proposal_rescue  0.0157| temporal_proposal_damage  0.0165| temporal_pair_residual_abs  0.0043| natural_pair_feedback_scale  0.0245| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.034| natural_pair_evidence_abs  0.0043| natural_pair_top1_agreement  0.276| natural_pair_verb_effect_abs  0.0211| natural_pair_object_effect_abs  0.013| temporal_object_prediction_preservation  0.9297| temporal_only_verb_change  0.0944| temporal_only_object_change  0.0318| temporal_both_change  0.0385| temporal_net_gain  -0.0008| temporal_proposal_net_gain  -0.0008| temporal_expert_k3_mean  0.0533| temporal_expert_k5_mean  0.1151| temporal_expert_k7_mean  0.2809| temporal_expert_k9_mean  0.5507| 
+Test Loss average: 8.429577827453613
+
+
+epoch 7 train loss 9.602803748795965
+epoch 7 train seconds 705.81
+epoch 7 AMP nonfinite temporal gradient steps 0
+epoch 7 com loss 5.323835523990022
+epoch 7 vv loss 3.1398841861917193
+epoch 7 oo loss 2.8220675358251364
+epoch 7 hsic_v loss 0.23976138101405456
+epoch 7 hsic_o loss 0.13930074449847726
+epoch 7 hsic_vo loss 0.0038997932366572883
+epoch 7 con_train loss 3.400340649260192
+epoch 7 natural feedback/component/route/shaper loss 0.000000/3.531960/0.018505/4.696201
+epoch 7 natural component verb/object loss 3.441639/3.742710 | hard margin -1.163147/-0.848484 | component top1 0.254193/0.341157
+epoch 7 natural pair score std/component evidence abs 0.030386/0.003195 | feedback scale 0.018250 | residual abs 0.000410
+epoch 7 natural pair top1 agreement 0.285093 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017913/0.012920
+epoch 7 temporal rescue/damage/net 0.014318/0.013079/0.001238 | disagreement 0.159854
+epoch 7 temporal proposal rescue/damage/net 0.014318/0.013079/0.001238
+epoch 7 temporal gate entropy 0.721667 | max 0.690201
+epoch 7 temporal gate mean k3:0.098418 | k5:0.151916 | k7:0.344705 | k9:0.404960
+epoch 7 temporal gate min/mean/max k3:0.000000/0.098418/0.999465 | k5:0.000000/0.151916/1.000000 | k7:0.000000/0.344705/0.999539 | k9:0.000000/0.404960/0.999999
+epoch 7 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 8 train loss 9.444163731166295
+epoch 8 train seconds 701.51
+epoch 8 AMP nonfinite temporal gradient steps 0
+epoch 8 com loss 5.253808998059826
+epoch 8 vv loss 3.0748891259441855
+epoch 8 oo loss 2.7836553401305895
+epoch 8 hsic_v loss 0.21246687618373822
+epoch 8 hsic_o loss 0.14045817753722686
+epoch 8 hsic_vo loss 0.003061941164612238
+epoch 8 con_train loss 3.0441043437028132
+epoch 8 natural feedback/component/route/shaper loss 0.000000/3.498020/0.019764/4.611487
+epoch 8 natural component verb/object loss 3.404402/3.716462 | hard margin -1.142164/-0.831945 | component top1 0.262301/0.348804
+epoch 8 natural pair score std/component evidence abs 0.030529/0.003191 | feedback scale 0.018257 | residual abs 0.000409
+epoch 8 natural pair top1 agreement 0.294030 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017984/0.012953
+epoch 8 temporal rescue/damage/net 0.015650/0.013786/0.001864 | disagreement 0.153274
+epoch 8 temporal proposal rescue/damage/net 0.015650/0.013786/0.001864
+epoch 8 temporal gate entropy 0.701729 | max 0.698804
+epoch 8 temporal gate mean k3:0.099220 | k5:0.148989 | k7:0.346721 | k9:0.405070
+epoch 8 temporal gate min/mean/max k3:0.000000/0.099220/0.999672 | k5:0.000000/0.148989/1.000000 | k7:0.000000/0.346721/0.999943 | k9:0.000000/0.405070/0.999998
+epoch 8 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 9 train loss 9.17318274393803
+epoch 9 train seconds 715.76
+epoch 9 AMP nonfinite temporal gradient steps 0
+epoch 9 com loss 5.080720015533832
+epoch 9 vv loss 2.9854377267741357
+epoch 9 oo loss 2.7126462978475234
+epoch 9 hsic_v loss 0.196233426447676
+epoch 9 hsic_o loss 0.14293670790160404
+epoch 9 hsic_vo loss 0.0025420252191188488
+epoch 9 con_train loss 3.346773072250751
+epoch 9 natural feedback/component/route/shaper loss 0.000000/3.443656/0.021984/4.468696
+epoch 9 natural component verb/object loss 3.342182/3.680430 | hard margin -1.106205/-0.802299 | component top1 0.277308/0.354474
+epoch 9 natural pair score std/component evidence abs 0.030711/0.003240 | feedback scale 0.018574 | residual abs 0.000416
+epoch 9 natural pair top1 agreement 0.302290 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018102/0.012927
+epoch 9 temporal rescue/damage/net 0.014452/0.014365/0.000087 | disagreement 0.149912
+epoch 9 temporal proposal rescue/damage/net 0.014452/0.014365/0.000087
+epoch 9 temporal gate entropy 0.671079 | max 0.713842
+epoch 9 temporal gate mean k3:0.100074 | k5:0.150570 | k7:0.346745 | k9:0.402610
+epoch 9 temporal gate min/mean/max k3:0.000000/0.100074/0.999737 | k5:0.000000/0.150570/1.000000 | k7:0.000000/0.346745/0.999958 | k9:0.000000/0.402610/0.999999
+epoch 9 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 10 train loss 9.075786600193055
+epoch 10 train seconds 698.35
+epoch 10 AMP nonfinite temporal gradient steps 0
+epoch 10 com loss 5.041902021199715
+epoch 10 vv loss 2.9473023222274137
+epoch 10 oo loss 2.679520599781966
+epoch 10 hsic_v loss 0.1811844426293333
+epoch 10 hsic_o loss 0.14094409720987833
+epoch 10 hsic_vo loss 0.002147139567234201
+epoch 10 con_train loss 3.044044170860483
+epoch 10 natural feedback/component/route/shaper loss 0.000000/3.427895/0.022070/4.418529
+epoch 10 natural component verb/object loss 3.324154/3.669959 | hard margin -1.088436/-0.800168 | component top1 0.283755/0.359181
+epoch 10 natural pair score std/component evidence abs 0.030633/0.003233 | feedback scale 0.018559 | residual abs 0.000415
+epoch 10 natural pair top1 agreement 0.305112 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017976/0.012967
+epoch 10 temporal rescue/damage/net 0.015778/0.014633/0.001145 | disagreement 0.149559
+epoch 10 temporal proposal rescue/damage/net 0.015778/0.014633/0.001145
+epoch 10 temporal gate entropy 0.677622 | max 0.710729
+epoch 10 temporal gate mean k3:0.102846 | k5:0.149704 | k7:0.346934 | k9:0.400516
+epoch 10 temporal gate min/mean/max k3:0.000000/0.102846/0.999903 | k5:0.000000/0.149704/1.000000 | k7:0.000000/0.346934/0.999951 | k9:0.000000/0.400516/0.999999
+epoch 10 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 11 train loss 8.79883849039799
+epoch 11 train seconds 712.09
+epoch 11 AMP nonfinite temporal gradient steps 0
+epoch 11 com loss 4.873410635635633
+epoch 11 vv loss 2.8418110236400316
+epoch 11 oo loss 2.614018190407953
+epoch 11 hsic_v loss 0.17316782583459084
+epoch 11 hsic_o loss 0.1491487875956447
+epoch 11 hsic_vo loss 0.00200561571185391
+epoch 11 con_train loss 3.2399731563920735
+epoch 11 natural feedback/component/route/shaper loss 0.000000/3.368081/0.020806/4.268406
+epoch 11 natural component verb/object loss 3.254501/3.633099 | hard margin -1.040296/-0.765287 | component top1 0.295963/0.364264
+epoch 11 natural pair score std/component evidence abs 0.030825/0.003304 | feedback scale 0.018977 | residual abs 0.000424
+epoch 11 natural pair top1 agreement 0.313349 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018121/0.012943
+epoch 11 temporal rescue/damage/net 0.016314/0.014241/0.002073 | disagreement 0.145133
+epoch 11 temporal proposal rescue/damage/net 0.016314/0.014241/0.002073
+epoch 11 temporal gate entropy 0.656396 | max 0.719988
+epoch 11 temporal gate mean k3:0.101266 | k5:0.148812 | k7:0.347321 | k9:0.402601
+epoch 11 temporal gate min/mean/max k3:0.000000/0.101266/0.999906 | k5:0.000000/0.148812/1.000000 | k7:0.000000/0.347321/0.999983 | k9:0.000000/0.402601/1.000000
+epoch 11 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.5557| best_seen  0.3894| AUC  0.1896| best_hm  0.3666| attr_acc  0.4696| obj_acc  0.528| ub_seen  0.3749| ub_unseen  0.2437| ub_all  0.2857| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0194| temporal_damage  0.0235| temporal_disagreement  0.1579| temporal_proposal_rescue  0.0194| temporal_proposal_damage  0.0235| temporal_pair_residual_abs  0.0046| natural_pair_feedback_scale  0.0266| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0046| natural_pair_top1_agreement  0.3017| natural_pair_verb_effect_abs  0.0204| natural_pair_object_effect_abs  0.0132| temporal_object_prediction_preservation  0.9219| temporal_only_verb_change  0.0798| temporal_only_object_change  0.039| temporal_both_change  0.0391| temporal_net_gain  -0.0041| temporal_proposal_net_gain  -0.0041| temporal_expert_k3_mean  0.0589| temporal_expert_k5_mean  0.0974| temporal_expert_k7_mean  0.4278| temporal_expert_k9_mean  0.4159| 
+Validation Loss average: 8.40919017791748
+find best!
+
+best_unseen  0.4718| best_seen  0.3872| AUC  0.1599| best_hm  0.3386| attr_acc  0.4892| obj_acc  0.5141| ub_seen  0.3682| ub_unseen  0.2367| ub_all  0.2826| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0179| temporal_damage  0.0214| temporal_disagreement  0.1588| temporal_proposal_rescue  0.0179| temporal_proposal_damage  0.0214| temporal_pair_residual_abs  0.0047| natural_pair_feedback_scale  0.0269| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0047| natural_pair_top1_agreement  0.293| natural_pair_verb_effect_abs  0.0208| natural_pair_object_effect_abs  0.0131| temporal_object_prediction_preservation  0.9207| temporal_only_verb_change  0.0795| temporal_only_object_change  0.0399| temporal_both_change  0.0394| temporal_net_gain  -0.0035| temporal_proposal_net_gain  -0.0035| temporal_expert_k3_mean  0.0642| temporal_expert_k5_mean  0.0895| temporal_expert_k7_mean  0.4367| temporal_expert_k9_mean  0.4096| 
+Test Loss average: 8.410929679870605
+
+
+epoch 12 train loss 8.943988521159197
+epoch 12 train seconds 725.37
+epoch 12 AMP nonfinite temporal gradient steps 0
+epoch 12 com loss 4.978391315756726
+epoch 12 vv loss 2.8880554401574017
+epoch 12 oo loss 2.657991030236252
+epoch 12 hsic_v loss 0.15989203604579974
+epoch 12 hsic_o loss 0.1485672139382663
+epoch 12 hsic_vo loss 0.001772238056815206
+epoch 12 con_train loss 2.7592072991763845
+epoch 12 natural feedback/component/route/shaper loss 0.000000/3.407338/0.020366/4.351793
+epoch 12 natural component verb/object loss 3.296317/3.666387 | hard margin -1.073678/-0.803821 | component top1 0.296022/0.359013
+epoch 12 natural pair score std/component evidence abs 0.030557/0.003252 | feedback scale 0.018708 | residual abs 0.000417
+epoch 12 natural pair top1 agreement 0.317595 | fixed feedback strength 0.000000 | raw verb/object evidence 0.017856/0.012931
+epoch 12 temporal rescue/damage/net 0.015477/0.015086/0.000391 | disagreement 0.145539
+epoch 12 temporal proposal rescue/damage/net 0.015477/0.015086/0.000391
+epoch 12 temporal gate entropy 0.665454 | max 0.716946
+epoch 12 temporal gate mean k3:0.101048 | k5:0.147405 | k7:0.348201 | k9:0.403346
+epoch 12 temporal gate min/mean/max k3:0.000000/0.101048/0.999980 | k5:0.000000/0.147405/1.000000 | k7:0.000000/0.348201/0.999957 | k9:0.000000/0.403346/1.000000
+epoch 12 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 13 train loss 8.482021274887213
+epoch 13 train seconds 702.47
+epoch 13 AMP nonfinite temporal gradient steps 0
+epoch 13 com loss 4.682445198147237
+epoch 13 vv loss 2.72800970918992
+epoch 13 oo loss 2.5294911070030275
+epoch 13 hsic_v loss 0.15634944666834438
+epoch 13 hsic_o loss 0.15257742909573707
+epoch 13 hsic_vo loss 0.0016759938053677187
+epoch 13 con_train loss 3.417664470191763
+epoch 13 natural feedback/component/route/shaper loss 0.000000/3.304245/0.019385/4.100216
+epoch 13 natural component verb/object loss 3.179380/3.595596 | hard margin -0.986642/-0.726862 | component top1 0.314274/0.375867
+epoch 13 natural pair score std/component evidence abs 0.030894/0.003364 | feedback scale 0.019370 | residual abs 0.000432
+epoch 13 natural pair top1 agreement 0.322762 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018114/0.012929
+epoch 13 temporal rescue/damage/net 0.017509/0.016916/0.000593 | disagreement 0.145396
+epoch 13 temporal proposal rescue/damage/net 0.017509/0.016916/0.000593
+epoch 13 temporal gate entropy 0.638350 | max 0.730817
+epoch 13 temporal gate mean k3:0.105786 | k5:0.145784 | k7:0.345462 | k9:0.402968
+epoch 13 temporal gate min/mean/max k3:0.000000/0.105786/0.999992 | k5:0.000000/0.145784/1.000000 | k7:0.000000/0.345462/0.999971 | k9:0.000000/0.402968/1.000000
+epoch 13 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 14 train loss 8.539294093797187
+epoch 14 train seconds 724.35
+epoch 14 AMP nonfinite temporal gradient steps 0
+epoch 14 com loss 4.750447218959071
+epoch 14 vv loss 2.7451053579314415
+epoch 14 oo loss 2.544521571407799
+epoch 14 hsic_v loss 0.14238483089358867
+epoch 14 hsic_o loss 0.14932409857376283
+epoch 14 hsic_vo loss 0.0014540931630093103
+epoch 14 con_train loss 2.7766794990090764
+epoch 14 natural feedback/component/route/shaper loss 0.000000/3.317767/0.020743/4.129382
+epoch 14 natural component verb/object loss 3.191240/3.612999 | hard margin -1.005705/-0.756119 | component top1 0.318702/0.372307
+epoch 14 natural pair score std/component evidence abs 0.030867/0.003319 | feedback scale 0.019129 | residual abs 0.000426
+epoch 14 natural pair top1 agreement 0.326926 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018089/0.012907
+epoch 14 temporal rescue/damage/net 0.017051/0.016547/0.000504 | disagreement 0.142139
+epoch 14 temporal proposal rescue/damage/net 0.017051/0.016547/0.000504
+epoch 14 temporal gate entropy 0.622782 | max 0.739061
+epoch 14 temporal gate mean k3:0.104288 | k5:0.147095 | k7:0.348077 | k9:0.400540
+epoch 14 temporal gate min/mean/max k3:0.000000/0.104288/0.999997 | k5:0.000000/0.147095/1.000000 | k7:0.000000/0.348077/0.999992 | k9:0.000000/0.400540/1.000000
+epoch 14 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 15 train loss 8.231421501896962
+epoch 15 train seconds 729.80
+epoch 15 AMP nonfinite temporal gradient steps 0
+epoch 15 com loss 4.53368399483817
+epoch 15 vv loss 2.6426387780854683
+epoch 15 oo loss 2.4588096916174687
+epoch 15 hsic_v loss 0.14396898297577346
+epoch 15 hsic_o loss 0.15521106506470872
+epoch 15 hsic_vo loss 0.0014628985213867131
+epoch 15 con_train loss 3.4528584744749953
+epoch 15 natural feedback/component/route/shaper loss 0.000000/3.258444/0.019451/3.971170
+epoch 15 natural component verb/object loss 3.121536/3.577895 | hard margin -0.941959/-0.713531 | component top1 0.333058/0.379153
+epoch 15 natural pair score std/component evidence abs 0.031079/0.003434 | feedback scale 0.019791 | residual abs 0.000441
+epoch 15 natural pair top1 agreement 0.329841 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018268/0.012925
+epoch 15 temporal rescue/damage/net 0.016384/0.015890/0.000494 | disagreement 0.137375
+epoch 15 temporal proposal rescue/damage/net 0.016384/0.015890/0.000494
+epoch 15 temporal gate entropy 0.624217 | max 0.737894
+epoch 15 temporal gate mean k3:0.104244 | k5:0.146175 | k7:0.349126 | k9:0.400455
+epoch 15 temporal gate min/mean/max k3:0.000000/0.104244/0.999977 | k5:0.000000/0.146175/1.000000 | k7:0.000000/0.349126/0.999994 | k9:0.000000/0.400455/1.000000
+epoch 15 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 16 train loss 8.169342274225059
+epoch 16 train seconds 727.35
+epoch 16 AMP nonfinite temporal gradient steps 0
+epoch 16 com loss 4.531712291220657
+epoch 16 vv loss 2.6195913703501725
+epoch 16 oo loss 2.432705271244049
+epoch 16 hsic_v loss 0.13958651296356145
+epoch 16 hsic_o loss 0.14915017674700554
+epoch 16 hsic_vo loss 0.001341089472603131
+epoch 16 con_train loss 2.9186684696614242
+epoch 16 natural feedback/component/route/shaper loss 0.000000/3.240806/0.021625/3.931352
+epoch 16 natural component verb/object loss 3.104333/3.559242 | hard margin -0.931983/-0.703382 | component top1 0.339281/0.382484
+epoch 16 natural pair score std/component evidence abs 0.031123/0.003394 | feedback scale 0.019581 | residual abs 0.000435
+epoch 16 natural pair top1 agreement 0.339624 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018284/0.012920
+epoch 16 temporal rescue/damage/net 0.014878/0.016460/-0.001582 | disagreement 0.133943
+epoch 16 temporal proposal rescue/damage/net 0.014878/0.016460/-0.001582
+epoch 16 temporal gate entropy 0.621851 | max 0.739552
+epoch 16 temporal gate mean k3:0.103445 | k5:0.146862 | k7:0.348623 | k9:0.401070
+epoch 16 temporal gate min/mean/max k3:0.000000/0.103445/0.999994 | k5:0.000000/0.146862/1.000000 | k7:0.000000/0.348623/0.999990 | k9:0.000000/0.401070/1.000000
+epoch 16 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6135| best_seen  0.4277| AUC  0.2324| best_hm  0.4057| attr_acc  0.5212| obj_acc  0.5603| ub_seen  0.4135| ub_unseen  0.2846| ub_all  0.3259| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0183| temporal_damage  0.0234| temporal_disagreement  0.1348| temporal_proposal_rescue  0.0183| temporal_proposal_damage  0.0234| temporal_pair_residual_abs  0.0045| natural_pair_feedback_scale  0.0259| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0333| natural_pair_evidence_abs  0.0045| natural_pair_top1_agreement  0.3532| natural_pair_verb_effect_abs  0.0197| natural_pair_object_effect_abs  0.013| temporal_object_prediction_preservation  0.9359| temporal_only_verb_change  0.0707| temporal_only_object_change  0.0328| temporal_both_change  0.0313| temporal_net_gain  -0.0051| temporal_proposal_net_gain  -0.0051| temporal_expert_k3_mean  0.13| temporal_expert_k5_mean  0.1316| temporal_expert_k7_mean  0.3571| temporal_expert_k9_mean  0.3813| 
+Validation Loss average: 8.401256561279297
+find best!
+
+best_unseen  0.5228| best_seen  0.4264| AUC  0.1972| best_hm  0.3814| attr_acc  0.5195| obj_acc  0.5382| ub_seen  0.409| ub_unseen  0.2643| ub_all  0.3148| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0182| temporal_damage  0.0213| temporal_disagreement  0.1418| temporal_proposal_rescue  0.0182| temporal_proposal_damage  0.0213| temporal_pair_residual_abs  0.0046| natural_pair_feedback_scale  0.0263| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0332| natural_pair_evidence_abs  0.0046| natural_pair_top1_agreement  0.3326| natural_pair_verb_effect_abs  0.02| natural_pair_object_effect_abs  0.0129| temporal_object_prediction_preservation  0.9305| temporal_only_verb_change  0.0723| temporal_only_object_change  0.0359| temporal_both_change  0.0335| temporal_net_gain  -0.0031| temporal_proposal_net_gain  -0.0031| temporal_expert_k3_mean  0.1208| temporal_expert_k5_mean  0.1238| temporal_expert_k7_mean  0.3726| temporal_expert_k9_mean  0.3828| 
+Test Loss average: 8.40361499786377
+
+
+epoch 17 train loss 8.010502196560386
+epoch 17 train seconds 709.44
+epoch 17 AMP nonfinite temporal gradient steps 0
+epoch 17 com loss 4.42922815895882
+epoch 17 vv loss 2.5623863014854305
+epoch 17 oo loss 2.389726464688277
+epoch 17 hsic_v loss 0.13516263042678353
+epoch 17 hsic_o loss 0.15268260038324766
+epoch 17 hsic_vo loss 0.0012802983472268528
+epoch 17 con_train loss 3.078656860159225
+epoch 17 natural feedback/component/route/shaper loss 0.000000/3.213533/0.019187/3.851185
+epoch 17 natural component verb/object loss 3.070187/3.548005 | hard margin -0.904588/-0.685897 | component top1 0.344249/0.386553
+epoch 17 natural pair score std/component evidence abs 0.031120/0.003438 | feedback scale 0.019850 | residual abs 0.000441
+epoch 17 natural pair top1 agreement 0.340558 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018291/0.012867
+epoch 17 temporal rescue/damage/net 0.017014/0.017823/-0.000809 | disagreement 0.135469
+epoch 17 temporal proposal rescue/damage/net 0.017014/0.017823/-0.000809
+epoch 17 temporal gate entropy 0.621914 | max 0.740493
+epoch 17 temporal gate mean k3:0.104827 | k5:0.143194 | k7:0.352650 | k9:0.399330
+epoch 17 temporal gate min/mean/max k3:0.000000/0.104827/0.999963 | k5:0.000000/0.143194/1.000000 | k7:0.000000/0.352650/0.999997 | k9:0.000000/0.399330/1.000000
+epoch 17 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 18 train loss 8.089178593419179
+epoch 18 train seconds 706.68
+epoch 18 AMP nonfinite temporal gradient steps 0
+epoch 18 com loss 4.490646915876565
+epoch 18 vv loss 2.589129176760922
+epoch 18 oo loss 2.4168886555343114
+epoch 18 hsic_v loss 0.12877685140912273
+epoch 18 hsic_o loss 0.15062284250469768
+epoch 18 hsic_vo loss 0.0011903329255419368
+epoch 18 con_train loss 2.687082933377819
+epoch 18 natural feedback/component/route/shaper loss 0.000000/3.244123/0.019324/3.895820
+epoch 18 natural component verb/object loss 3.102137/3.575424 | hard margin -0.935808/-0.717400 | component top1 0.343952/0.380034
+epoch 18 natural pair score std/component evidence abs 0.030997/0.003403 | feedback scale 0.019655 | residual abs 0.000437
+epoch 18 natural pair top1 agreement 0.339922 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018176/0.012862
+epoch 18 temporal rescue/damage/net 0.015526/0.017718/-0.002192 | disagreement 0.132356
+epoch 18 temporal proposal rescue/damage/net 0.015526/0.017718/-0.002192
+epoch 18 temporal gate entropy 0.622803 | max 0.739980
+epoch 18 temporal gate mean k3:0.105608 | k5:0.144044 | k7:0.348695 | k9:0.401652
+epoch 18 temporal gate min/mean/max k3:0.000000/0.105608/0.999999 | k5:0.000000/0.144044/1.000000 | k7:0.000000/0.348695/0.999997 | k9:0.000000/0.401652/1.000000
+epoch 18 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 19 train loss 7.759317459779627
+epoch 19 train seconds 709.70
+epoch 19 AMP nonfinite temporal gradient steps 0
+epoch 19 com loss 4.278232025699455
+epoch 19 vv loss 2.4833702285750574
+epoch 19 oo loss 2.3216752334803092
+epoch 19 hsic_v loss 0.12383433558485087
+epoch 19 hsic_o loss 0.14796058221900163
+epoch 19 hsic_vo loss 0.0010941509198506966
+epoch 19 con_train loss 3.149461007318577
+epoch 19 natural feedback/component/route/shaper loss 0.000000/3.170435/0.019494/3.718718
+epoch 19 natural component verb/object loss 3.021843/3.517151 | hard margin -0.862539/-0.654091 | component top1 0.357713/0.395946
+epoch 19 natural pair score std/component evidence abs 0.031086/0.003480 | feedback scale 0.020122 | residual abs 0.000447
+epoch 19 natural pair top1 agreement 0.347030 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018215/0.012856
+epoch 19 temporal rescue/damage/net 0.016485/0.017794/-0.001309 | disagreement 0.127326
+epoch 19 temporal proposal rescue/damage/net 0.016485/0.017794/-0.001309
+epoch 19 temporal gate entropy 0.613321 | max 0.743744
+epoch 19 temporal gate mean k3:0.103401 | k5:0.147743 | k7:0.350760 | k9:0.398096
+epoch 19 temporal gate min/mean/max k3:0.000000/0.103401/1.000000 | k5:0.000000/0.147743/1.000000 | k7:0.000000/0.350760/0.999998 | k9:0.000000/0.398096/1.000000
+epoch 19 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 20 train loss 7.54747612255962
+epoch 20 train seconds 732.71
+epoch 20 AMP nonfinite temporal gradient steps 0
+epoch 20 com loss 4.148698757876869
+epoch 20 vv loss 2.408468149890419
+epoch 20 oo loss 2.2614881184922546
+epoch 20 hsic_v loss 0.11673530393413135
+epoch 20 hsic_o loss 0.14546325194860707
+epoch 20 hsic_vo loss 0.0010101456302726846
+epoch 20 con_train loss 3.2916794159833125
+epoch 20 natural feedback/component/route/shaper loss 0.000000/3.130479/0.019329/3.607846
+epoch 20 natural component verb/object loss 2.972724/3.498575 | hard margin -0.827554/-0.630739 | component top1 0.370258/0.401175
+epoch 20 natural pair score std/component evidence abs 0.031269/0.003544 | feedback scale 0.020500 | residual abs 0.000455
+epoch 20 natural pair top1 agreement 0.353213 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018386/0.012815
+epoch 20 temporal rescue/damage/net 0.016311/0.018770/-0.002459 | disagreement 0.128630
+epoch 20 temporal proposal rescue/damage/net 0.016311/0.018770/-0.002459
+epoch 20 temporal gate entropy 0.600157 | max 0.749792
+epoch 20 temporal gate mean k3:0.106061 | k5:0.149751 | k7:0.350332 | k9:0.393856
+epoch 20 temporal gate min/mean/max k3:0.000000/0.106061/0.999999 | k5:0.000000/0.149751/1.000000 | k7:0.000000/0.350332/0.999999 | k9:0.000000/0.393856/1.000000
+epoch 20 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 21 train loss 7.477542616739995
+epoch 21 train seconds 702.39
+epoch 21 AMP nonfinite temporal gradient steps 0
+epoch 21 com loss 4.116622757911682
+epoch 21 vv loss 2.382662988109749
+epoch 21 oo loss 2.2397150424348204
+epoch 21 hsic_v loss 0.11721831214528124
+epoch 21 hsic_o loss 0.14276246199337375
+epoch 21 hsic_vo loss 0.0009908587342625124
+epoch 21 con_train loss 3.0957746521765444
+epoch 21 natural feedback/component/route/shaper loss 0.000000/3.120508/0.019360/3.574190
+epoch 21 natural component verb/object loss 2.959545/3.496089 | hard margin -0.818771/-0.626244 | component top1 0.371748/0.402805
+epoch 21 natural pair score std/component evidence abs 0.031269/0.003548 | feedback scale 0.020544 | residual abs 0.000455
+epoch 21 natural pair top1 agreement 0.354365 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018370/0.012829
+epoch 21 temporal rescue/damage/net 0.015746/0.018154/-0.002408 | disagreement 0.124834
+epoch 21 temporal proposal rescue/damage/net 0.015746/0.018154/-0.002408
+epoch 21 temporal gate entropy 0.586075 | max 0.758207
+epoch 21 temporal gate mean k3:0.104094 | k5:0.150010 | k7:0.345832 | k9:0.400064
+epoch 21 temporal gate min/mean/max k3:0.000000/0.104094/0.999999 | k5:0.000000/0.150010/1.000000 | k7:0.000000/0.345832/0.999999 | k9:0.000000/0.400064/1.000000
+epoch 21 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6295| best_seen  0.4515| AUC  0.2506| best_hm  0.4216| attr_acc  0.5307| obj_acc  0.5687| ub_seen  0.44| ub_unseen  0.2741| ub_all  0.3272| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0208| temporal_damage  0.0197| temporal_disagreement  0.1339| temporal_proposal_rescue  0.0208| temporal_proposal_damage  0.0197| temporal_pair_residual_abs  0.0047| natural_pair_feedback_scale  0.027| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0047| natural_pair_top1_agreement  0.3696| natural_pair_verb_effect_abs  0.0203| natural_pair_object_effect_abs  0.0128| temporal_object_prediction_preservation  0.9341| temporal_only_verb_change  0.068| temporal_only_object_change  0.0335| temporal_both_change  0.0324| temporal_net_gain  0.0011| temporal_proposal_net_gain  0.0011| temporal_expert_k3_mean  0.1251| temporal_expert_k5_mean  0.1349| temporal_expert_k7_mean  0.3179| temporal_expert_k9_mean  0.4221| 
+Validation Loss average: 8.394645690917969
+find best!
+
+best_unseen  0.5402| best_seen  0.4608| AUC  0.2215| best_hm  0.4071| attr_acc  0.5468| obj_acc  0.5581| ub_seen  0.4433| ub_unseen  0.2774| ub_all  0.3354| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0192| temporal_damage  0.0225| temporal_disagreement  0.1388| temporal_proposal_rescue  0.0192| temporal_proposal_damage  0.0225| temporal_pair_residual_abs  0.0047| natural_pair_feedback_scale  0.0274| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0047| natural_pair_top1_agreement  0.3434| natural_pair_verb_effect_abs  0.0207| natural_pair_object_effect_abs  0.0127| temporal_object_prediction_preservation  0.9328| temporal_only_verb_change  0.0716| temporal_only_object_change  0.038| temporal_both_change  0.0292| temporal_net_gain  -0.0034| temporal_proposal_net_gain  -0.0034| temporal_expert_k3_mean  0.1234| temporal_expert_k5_mean  0.1263| temporal_expert_k7_mean  0.327| temporal_expert_k9_mean  0.4232| 
+Test Loss average: 8.396356582641602
+
+
+epoch 22 train loss 7.290597170741618
+epoch 22 train seconds 714.92
+epoch 22 AMP nonfinite temporal gradient steps 0
+epoch 22 com loss 3.9964585733012994
+epoch 22 vv loss 2.322929404963966
+epoch 22 oo loss 2.182500132893314
+epoch 22 hsic_v loss 0.11182209525664313
+epoch 22 hsic_o loss 0.14221434355282983
+epoch 22 hsic_vo loss 0.0009560597133568386
+epoch 22 con_train loss 3.326723358410747
+epoch 22 natural feedback/component/route/shaper loss 0.000000/3.084222/0.017646/3.476462
+epoch 22 natural component verb/object loss 2.918648/3.470560 | hard margin -0.784181/-0.607950 | component top1 0.383452/0.405329
+epoch 22 natural pair score std/component evidence abs 0.031431/0.003617 | feedback scale 0.020946 | residual abs 0.000464
+epoch 22 natural pair top1 agreement 0.358007 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018480/0.012845
+epoch 22 temporal rescue/damage/net 0.016070/0.017958/-0.001888 | disagreement 0.123019
+epoch 22 temporal proposal rescue/damage/net 0.016070/0.017958/-0.001888
+epoch 22 temporal gate entropy 0.602837 | max 0.751333
+epoch 22 temporal gate mean k3:0.107289 | k5:0.148369 | k7:0.346206 | k9:0.398136
+epoch 22 temporal gate min/mean/max k3:0.000000/0.107289/0.999987 | k5:0.000000/0.148369/1.000000 | k7:0.000000/0.346206/0.999998 | k9:0.000000/0.398136/1.000000
+epoch 22 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 23 train loss 7.212361042038733
+epoch 23 train seconds 707.73
+epoch 23 AMP nonfinite temporal gradient steps 0
+epoch 23 com loss 3.956679311119208
+epoch 23 vv loss 2.3002539203948333
+epoch 23 oo loss 2.1599945304774435
+epoch 23 hsic_v loss 0.10285477444779972
+epoch 23 hsic_o loss 0.13350362941747954
+epoch 23 hsic_vo loss 0.0008095573011233996
+epoch 23 con_train loss 3.2375859669276648
+epoch 23 natural feedback/component/route/shaper loss 0.000000/3.076426/0.018500/3.432404
+epoch 23 natural component verb/object loss 2.910964/3.462505 | hard margin -0.775397/-0.599218 | component top1 0.388299/0.408624
+epoch 23 natural pair score std/component evidence abs 0.031360/0.003631 | feedback scale 0.021045 | residual abs 0.000466
+epoch 23 natural pair top1 agreement 0.359474 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018391/0.012846
+epoch 23 temporal rescue/damage/net 0.016105/0.019675/-0.003570 | disagreement 0.122015
+epoch 23 temporal proposal rescue/damage/net 0.016105/0.019675/-0.003570
+epoch 23 temporal gate entropy 0.609300 | max 0.748927
+epoch 23 temporal gate mean k3:0.107603 | k5:0.146316 | k7:0.349969 | k9:0.396112
+epoch 23 temporal gate min/mean/max k3:0.000000/0.107603/0.999997 | k5:0.000000/0.146316/1.000000 | k7:0.000000/0.349969/0.999973 | k9:0.000000/0.396112/1.000000
+epoch 23 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 24 train loss 7.2202386507467065
+epoch 24 train seconds 702.17
+epoch 24 AMP nonfinite temporal gradient steps 0
+epoch 24 com loss 3.963145219979166
+epoch 24 vv loss 2.3012105993863914
+epoch 24 oo loss 2.171936656246666
+epoch 24 hsic_v loss 0.10236491938473798
+epoch 24 hsic_o loss 0.1434170124473191
+epoch 24 hsic_vo loss 0.0008604649114892075
+epoch 24 con_train loss 3.0949373469633215
+epoch 24 natural feedback/component/route/shaper loss 0.000000/3.081315/0.018380/3.440976
+epoch 24 natural component verb/object loss 2.912071/3.476216 | hard margin -0.773974/-0.616914 | component top1 0.389276/0.405658
+epoch 24 natural pair score std/component evidence abs 0.031350/0.003664 | feedback scale 0.021232 | residual abs 0.000470
+epoch 24 natural pair top1 agreement 0.362021 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018394/0.012847
+epoch 24 temporal rescue/damage/net 0.015714/0.019568/-0.003854 | disagreement 0.123060
+epoch 24 temporal proposal rescue/damage/net 0.015714/0.019568/-0.003854
+epoch 24 temporal gate entropy 0.613724 | max 0.747747
+epoch 24 temporal gate mean k3:0.106239 | k5:0.147299 | k7:0.347925 | k9:0.398537
+epoch 24 temporal gate min/mean/max k3:0.000000/0.106239/0.999990 | k5:0.000000/0.147299/1.000000 | k7:0.000000/0.347925/0.999997 | k9:0.000000/0.398537/1.000000
+epoch 24 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 25 train loss 6.983721701838389
+epoch 25 train seconds 704.54
+epoch 25 AMP nonfinite temporal gradient steps 0
+epoch 25 com loss 3.8352565554009765
+epoch 25 vv loss 2.212580508945369
+epoch 25 oo loss 2.098418481810754
+epoch 25 hsic_v loss 0.09360473598001384
+epoch 25 hsic_o loss 0.13163636176526045
+epoch 25 hsic_vo loss 0.0007158316357086702
+epoch 25 con_train loss 3.0414734239337826
+epoch 25 natural feedback/component/route/shaper loss 0.000000/3.030948/0.016940/3.313230
+epoch 25 natural component verb/object loss 2.852698/3.446864 | hard margin -0.724452/-0.582111 | component top1 0.403537/0.412680
+epoch 25 natural pair score std/component evidence abs 0.031404/0.003679 | feedback scale 0.021346 | residual abs 0.000472
+epoch 25 natural pair top1 agreement 0.369660 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018441/0.012778
+epoch 25 temporal rescue/damage/net 0.016300/0.020417/-0.004117 | disagreement 0.120670
+epoch 25 temporal proposal rescue/damage/net 0.016300/0.020417/-0.004117
+epoch 25 temporal gate entropy 0.610557 | max 0.748772
+epoch 25 temporal gate mean k3:0.104285 | k5:0.152031 | k7:0.346242 | k9:0.397442
+epoch 25 temporal gate min/mean/max k3:0.000000/0.104285/0.999985 | k5:0.000000/0.152031/1.000000 | k7:0.000000/0.346242/0.999988 | k9:0.000000/0.397442/1.000000
+epoch 25 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 26 train loss 7.057864171116292
+epoch 26 train seconds 704.33
+epoch 26 AMP nonfinite temporal gradient steps 0
+epoch 26 com loss 3.879814046871762
+epoch 26 vv loss 2.246034345606796
+epoch 26 oo loss 2.1205860674882135
+epoch 26 hsic_v loss 0.09124927087804349
+epoch 26 hsic_o loss 0.13082353272357908
+epoch 26 hsic_vo loss 0.0006994993053303304
+epoch 26 con_train loss 2.8275897354638877
+epoch 26 natural feedback/component/route/shaper loss 0.000000/3.053411/0.017654/3.365409
+epoch 26 natural component verb/object loss 2.876004/3.467361 | hard margin -0.754308/-0.600481 | component top1 0.395697/0.410400
+epoch 26 natural pair score std/component evidence abs 0.031332/0.003667 | feedback scale 0.021281 | residual abs 0.000470
+epoch 26 natural pair top1 agreement 0.366938 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018379/0.012788
+epoch 26 temporal rescue/damage/net 0.016733/0.021364/-0.004631 | disagreement 0.121408
+epoch 26 temporal proposal rescue/damage/net 0.016733/0.021364/-0.004631
+epoch 26 temporal gate entropy 0.622081 | max 0.744139
+epoch 26 temporal gate mean k3:0.108048 | k5:0.148063 | k7:0.346132 | k9:0.397757
+epoch 26 temporal gate min/mean/max k3:0.000000/0.108048/0.999997 | k5:0.000000/0.148063/1.000000 | k7:0.000000/0.346132/0.999967 | k9:0.000000/0.397757/0.999999
+epoch 26 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6451| best_seen  0.4726| AUC  0.2738| best_hm  0.4463| attr_acc  0.5614| obj_acc  0.5876| ub_seen  0.4565| ub_unseen  0.3228| ub_all  0.3656| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0176| temporal_damage  0.0232| temporal_disagreement  0.1276| temporal_proposal_rescue  0.0176| temporal_proposal_damage  0.0232| temporal_pair_residual_abs  0.005| natural_pair_feedback_scale  0.0289| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0332| natural_pair_evidence_abs  0.005| natural_pair_top1_agreement  0.3585| natural_pair_verb_effect_abs  0.0194| natural_pair_object_effect_abs  0.013| temporal_object_prediction_preservation  0.9329| temporal_only_verb_change  0.0605| temporal_only_object_change  0.0382| temporal_both_change  0.0289| temporal_net_gain  -0.0056| temporal_proposal_net_gain  -0.0056| temporal_expert_k3_mean  0.1328| temporal_expert_k5_mean  0.1495| temporal_expert_k7_mean  0.2969| temporal_expert_k9_mean  0.4208| 
+Validation Loss average: 8.377921104431152
+find best!
+
+best_unseen  0.5564| best_seen  0.4857| AUC  0.2433| best_hm  0.4294| attr_acc  0.553| obj_acc  0.5691| ub_seen  0.4696| ub_unseen  0.2887| ub_all  0.3519| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0177| temporal_damage  0.0214| temporal_disagreement  0.1347| temporal_proposal_rescue  0.0177| temporal_proposal_damage  0.0214| temporal_pair_residual_abs  0.0051| natural_pair_feedback_scale  0.0296| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0332| natural_pair_evidence_abs  0.0051| natural_pair_top1_agreement  0.3522| natural_pair_verb_effect_abs  0.0198| natural_pair_object_effect_abs  0.0129| temporal_object_prediction_preservation  0.9332| temporal_only_verb_change  0.0679| temporal_only_object_change  0.0342| temporal_both_change  0.0326| temporal_net_gain  -0.0037| temporal_proposal_net_gain  -0.0037| temporal_expert_k3_mean  0.1312| temporal_expert_k5_mean  0.1403| temporal_expert_k7_mean  0.3045| temporal_expert_k9_mean  0.424| 
+Test Loss average: 8.379786491394043
+
+
+epoch 27 train loss 6.927693411482482
+epoch 27 train seconds 703.85
+epoch 27 AMP nonfinite temporal gradient steps 0
+epoch 27 com loss 3.78926552373822
+epoch 27 vv loss 2.209081357667426
+epoch 27 oo loss 2.083089053430477
+epoch 27 hsic_v loss 0.09126734568291352
+epoch 27 hsic_o loss 0.12596100228173393
+epoch 27 hsic_vo loss 0.0006823108837247176
+epoch 27 con_train loss 3.076180158342634
+epoch 27 natural feedback/component/route/shaper loss 0.000000/3.042001/0.016733/3.295518
+epoch 27 natural component verb/object loss 2.862768/3.460210 | hard margin -0.731562/-0.597266 | component top1 0.400779/0.412513
+epoch 27 natural pair score std/component evidence abs 0.031339/0.003760 | feedback scale 0.021821 | residual abs 0.000482
+epoch 27 natural pair top1 agreement 0.365715 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018399/0.012789
+epoch 27 temporal rescue/damage/net 0.016328/0.020965/-0.004637 | disagreement 0.117069
+epoch 27 temporal proposal rescue/damage/net 0.016328/0.020965/-0.004637
+epoch 27 temporal gate entropy 0.628182 | max 0.742980
+epoch 27 temporal gate mean k3:0.106601 | k5:0.150689 | k7:0.350377 | k9:0.392333
+epoch 27 temporal gate min/mean/max k3:0.000000/0.106601/0.999969 | k5:0.000000/0.150689/1.000000 | k7:0.000000/0.350377/0.999989 | k9:0.000000/0.392333/0.999990
+epoch 27 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 28 train loss 6.589897452683008
+epoch 28 train seconds 713.45
+epoch 28 AMP nonfinite temporal gradient steps 0
+epoch 28 com loss 3.5869803315451163
+epoch 28 vv loss 2.0829364644379176
+epoch 28 oo loss 1.9797805642881314
+epoch 28 hsic_v loss 0.08193212894707166
+epoch 28 hsic_o loss 0.11624870366659484
+epoch 28 hsic_vo loss 0.0005558750604033791
+epoch 28 con_train loss 3.360587774004255
+epoch 28 natural feedback/component/route/shaper loss 0.000000/2.953604/0.017162/3.118173
+epoch 28 natural component verb/object loss 2.760095/3.405126 | hard margin -0.635697/-0.534812 | component top1 0.421599/0.422493
+epoch 28 natural pair score std/component evidence abs 0.031579/0.003849 | feedback scale 0.022364 | residual abs 0.000494
+epoch 28 natural pair top1 agreement 0.379213 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018585/0.012752
+epoch 28 temporal rescue/damage/net 0.015486/0.019841/-0.004355 | disagreement 0.113066
+epoch 28 temporal proposal rescue/damage/net 0.015486/0.019841/-0.004355
+epoch 28 temporal gate entropy 0.607566 | max 0.751284
+epoch 28 temporal gate mean k3:0.110876 | k5:0.147372 | k7:0.345028 | k9:0.396724
+epoch 28 temporal gate min/mean/max k3:0.000000/0.110876/0.999980 | k5:0.000000/0.147372/1.000000 | k7:0.000000/0.345028/0.999994 | k9:0.000000/0.396724/0.999996
+epoch 28 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 29 train loss 6.502564320444059
+epoch 29 train seconds 721.86
+epoch 29 AMP nonfinite temporal gradient steps 0
+epoch 29 com loss 3.5350741227133935
+epoch 29 vv loss 2.0664399392965462
+epoch 29 oo loss 1.9495677942488374
+epoch 29 hsic_v loss 0.07848154091972764
+epoch 29 hsic_o loss 0.11629846297642764
+epoch 29 hsic_vo loss 0.0005511421836817739
+epoch 29 con_train loss 3.289183318514784
+epoch 29 natural feedback/component/route/shaper loss 0.000000/2.952924/0.015811/3.074083
+epoch 29 natural component verb/object loss 2.759761/3.403637 | hard margin -0.639372/-0.534392 | component top1 0.421549/0.423223
+epoch 29 natural pair score std/component evidence abs 0.031616/0.003891 | feedback scale 0.022621 | residual abs 0.000499
+epoch 29 natural pair top1 agreement 0.375178 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018593/0.012768
+epoch 29 temporal rescue/damage/net 0.016802/0.020981/-0.004179 | disagreement 0.113962
+epoch 29 temporal proposal rescue/damage/net 0.016802/0.020981/-0.004179
+epoch 29 temporal gate entropy 0.622876 | max 0.744510
+epoch 29 temporal gate mean k3:0.108655 | k5:0.149214 | k7:0.342115 | k9:0.400015
+epoch 29 temporal gate min/mean/max k3:0.000000/0.108655/0.999964 | k5:0.000000/0.149214/1.000000 | k7:0.000000/0.342115/0.999995 | k9:0.000000/0.400015/0.999999
+epoch 29 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 30 train loss 6.407126546507122
+epoch 30 train seconds 723.96
+epoch 30 AMP nonfinite temporal gradient steps 0
+epoch 30 com loss 3.488848212085852
+epoch 30 vv loss 2.0310365706431766
+epoch 30 oo loss 1.918457029747362
+epoch 30 hsic_v loss 0.0754559986136791
+epoch 30 hsic_o loss 0.11521384492516518
+epoch 30 hsic_vo loss 0.000533908066054133
+epoch 30 con_train loss 3.199986879364783
+epoch 30 natural feedback/component/route/shaper loss 0.000000/2.928756/0.016718/3.019224
+epoch 30 natural component verb/object loss 2.733033/3.385443 | hard margin -0.613807/-0.517201 | component top1 0.428023/0.429372
+epoch 30 natural pair score std/component evidence abs 0.031684/0.003893 | feedback scale 0.022639 | residual abs 0.000500
+epoch 30 natural pair top1 agreement 0.381761 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018635/0.012769
+epoch 30 temporal rescue/damage/net 0.015105/0.021960/-0.006856 | disagreement 0.110061
+epoch 30 temporal proposal rescue/damage/net 0.015105/0.021960/-0.006856
+epoch 30 temporal gate entropy 0.627395 | max 0.743298
+epoch 30 temporal gate mean k3:0.108792 | k5:0.148657 | k7:0.346477 | k9:0.396074
+epoch 30 temporal gate min/mean/max k3:0.000000/0.108792/0.999962 | k5:0.000000/0.148657/1.000000 | k7:0.000000/0.346477/0.999997 | k9:0.000000/0.396074/1.000000
+epoch 30 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 31 train loss 6.427021012987409
+epoch 31 train seconds 725.37
+epoch 31 AMP nonfinite temporal gradient steps 0
+epoch 31 com loss 3.506352017907535
+epoch 31 vv loss 2.036363315932891
+epoch 31 oo loss 1.926480983986574
+epoch 31 hsic_v loss 0.07291436221982751
+epoch 31 hsic_o loss 0.10895882900647756
+epoch 31 hsic_vo loss 0.0004952156725985256
+epoch 31 con_train loss 2.9685883289625665
+epoch 31 natural feedback/component/route/shaper loss 0.000000/2.939903/0.015866/3.040262
+epoch 31 natural component verb/object loss 2.743488/3.398205 | hard margin -0.626217/-0.537171 | component top1 0.428771/0.424846
+epoch 31 natural pair score std/component evidence abs 0.031654/0.003895 | feedback scale 0.022656 | residual abs 0.000500
+epoch 31 natural pair top1 agreement 0.382181 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018632/0.012751
+epoch 31 temporal rescue/damage/net 0.015249/0.021725/-0.006476 | disagreement 0.112007
+epoch 31 temporal proposal rescue/damage/net 0.015249/0.021725/-0.006476
+epoch 31 temporal gate entropy 0.626585 | max 0.742982
+epoch 31 temporal gate mean k3:0.109717 | k5:0.151550 | k7:0.342225 | k9:0.396509
+epoch 31 temporal gate min/mean/max k3:0.000000/0.109717/0.999999 | k5:0.000000/0.151550/1.000000 | k7:0.000000/0.342225/0.999997 | k9:0.000000/0.396509/0.999999
+epoch 31 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6582| best_seen  0.4998| AUC  0.2942| best_hm  0.4592| attr_acc  0.5592| obj_acc  0.5946| ub_seen  0.4884| ub_unseen  0.3048| ub_all  0.3636| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0197| temporal_damage  0.0222| temporal_disagreement  0.1258| temporal_proposal_rescue  0.0197| temporal_proposal_damage  0.0222| temporal_pair_residual_abs  0.0055| natural_pair_feedback_scale  0.0322| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0337| natural_pair_evidence_abs  0.0055| natural_pair_top1_agreement  0.3794| natural_pair_verb_effect_abs  0.0199| natural_pair_object_effect_abs  0.0129| temporal_object_prediction_preservation  0.9351| temporal_only_verb_change  0.0609| temporal_only_object_change  0.0354| temporal_both_change  0.0295| temporal_net_gain  -0.0025| temporal_proposal_net_gain  -0.0025| temporal_expert_k3_mean  0.1241| temporal_expert_k5_mean  0.1332| temporal_expert_k7_mean  0.328| temporal_expert_k9_mean  0.4147| 
+Validation Loss average: 8.360148429870605
+find best!
+
+best_unseen  0.5781| best_seen  0.4959| AUC  0.2607| best_hm  0.4479| attr_acc  0.5754| obj_acc  0.5727| ub_seen  0.4814| ub_unseen  0.3048| ub_all  0.3665| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0175| temporal_damage  0.0209| temporal_disagreement  0.1301| temporal_proposal_rescue  0.0175| temporal_proposal_damage  0.0209| temporal_pair_residual_abs  0.0057| natural_pair_feedback_scale  0.033| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0338| natural_pair_evidence_abs  0.0057| natural_pair_top1_agreement  0.3559| natural_pair_verb_effect_abs  0.0204| natural_pair_object_effect_abs  0.0126| temporal_object_prediction_preservation  0.9329| temporal_only_verb_change  0.063| temporal_only_object_change  0.0378| temporal_both_change  0.0294| temporal_net_gain  -0.0034| temporal_proposal_net_gain  -0.0034| temporal_expert_k3_mean  0.1137| temporal_expert_k5_mean  0.1286| temporal_expert_k7_mean  0.3396| temporal_expert_k9_mean  0.4181| 
+Test Loss average: 8.36098575592041
+
+
+epoch 32 train loss 6.201071427249107
+epoch 32 train seconds 725.05
+epoch 32 AMP nonfinite temporal gradient steps 0
+epoch 32 com loss 3.360660446591738
+epoch 32 vv loss 1.9652549621437778
+epoch 32 oo loss 1.854548951006737
+epoch 32 hsic_v loss 0.06861715618395756
+epoch 32 hsic_o loss 0.10670926203372098
+epoch 32 hsic_vo loss 0.00046529458782404757
+epoch 32 con_train loss 3.2526046817042245
+epoch 32 natural feedback/component/route/shaper loss 0.000000/2.897273/0.016735/2.922630
+epoch 32 natural component verb/object loss 2.695794/3.367391 | hard margin -0.580730/-0.500270 | component top1 0.434929/0.432786
+epoch 32 natural pair score std/component evidence abs 0.031734/0.004012 | feedback scale 0.023341 | residual abs 0.000515
+epoch 32 natural pair top1 agreement 0.380144 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018693/0.012742
+epoch 32 temporal rescue/damage/net 0.016762/0.021495/-0.004733 | disagreement 0.107277
+epoch 32 temporal proposal rescue/damage/net 0.016762/0.021495/-0.004733
+epoch 32 temporal gate entropy 0.622664 | max 0.746160
+epoch 32 temporal gate mean k3:0.109325 | k5:0.151575 | k7:0.345524 | k9:0.393575
+epoch 32 temporal gate min/mean/max k3:0.000000/0.109325/0.999985 | k5:0.000000/0.151575/1.000000 | k7:0.000000/0.345524/0.999983 | k9:0.000000/0.393575/0.999999
+epoch 32 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 33 train loss 6.229170527778754
+epoch 33 train seconds 721.75
+epoch 33 AMP nonfinite temporal gradient steps 0
+epoch 33 com loss 3.3941632813766223
+epoch 33 vv loss 1.9718253371094456
+epoch 33 oo loss 1.8661208516409418
+epoch 33 hsic_v loss 0.06823988029686343
+epoch 33 hsic_o loss 0.10429616144725255
+epoch 33 hsic_vo loss 0.0004524519480575324
+epoch 33 con_train loss 2.9146447366025265
+epoch 33 natural feedback/component/route/shaper loss 0.000000/2.904107/0.015477/2.936923
+epoch 33 natural component verb/object loss 2.699967/3.380433 | hard margin -0.590628/-0.506783 | component top1 0.438986/0.429129
+epoch 33 natural pair score std/component evidence abs 0.031739/0.003966 | feedback scale 0.023086 | residual abs 0.000509
+epoch 33 natural pair top1 agreement 0.381195 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018699/0.012723
+epoch 33 temporal rescue/damage/net 0.014690/0.021127/-0.006437 | disagreement 0.106448
+epoch 33 temporal proposal rescue/damage/net 0.014690/0.021127/-0.006437
+epoch 33 temporal gate entropy 0.631162 | max 0.742961
+epoch 33 temporal gate mean k3:0.110710 | k5:0.150902 | k7:0.343245 | k9:0.395143
+epoch 33 temporal gate min/mean/max k3:0.000000/0.110710/0.999997 | k5:0.000000/0.150902/1.000000 | k7:0.000000/0.343245/0.999972 | k9:0.000000/0.395143/0.999998
+epoch 33 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 34 train loss 5.8693437816716045
+epoch 34 train seconds 727.90
+epoch 34 AMP nonfinite temporal gradient steps 0
+epoch 34 com loss 3.1722148792583402
+epoch 34 vv loss 1.8425717255648444
+epoch 34 oo loss 1.7587431917671397
+epoch 34 hsic_v loss 0.06606591556753431
+epoch 34 hsic_o loss 0.09845613045226626
+epoch 34 hsic_vo loss 0.0004346427631817813
+epoch 34 con_train loss 3.2875142618387687
+epoch 34 natural feedback/component/route/shaper loss 0.000000/2.826245/0.015744/2.743486
+epoch 34 natural component verb/object loss 2.612432/3.325143 | hard margin -0.502112/-0.450905 | component top1 0.456799/0.442899
+epoch 34 natural pair score std/component evidence abs 0.031866/0.004091 | feedback scale 0.023843 | residual abs 0.000525
+epoch 34 natural pair top1 agreement 0.390552 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018772/0.012704
+epoch 34 temporal rescue/damage/net 0.015330/0.023311/-0.007982 | disagreement 0.101412
+epoch 34 temporal proposal rescue/damage/net 0.015330/0.023311/-0.007982
+epoch 34 temporal gate entropy 0.616025 | max 0.749247
+epoch 34 temporal gate mean k3:0.108388 | k5:0.149347 | k7:0.350339 | k9:0.391925
+epoch 34 temporal gate min/mean/max k3:0.000000/0.108388/0.999993 | k5:0.000000/0.149347/1.000000 | k7:0.000000/0.350339/0.999995 | k9:0.000000/0.391925/0.999999
+epoch 34 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 35 train loss 6.032401930183924
+epoch 35 train seconds 707.88
+epoch 35 AMP nonfinite temporal gradient steps 0
+epoch 35 com loss 3.2670622865192027
+epoch 35 vv loss 1.9141592296231695
+epoch 35 oo loss 1.8061008859582308
+epoch 35 hsic_v loss 0.06451156850309432
+epoch 35 hsic_o loss 0.09678729302367242
+epoch 35 hsic_vo loss 0.0004333137523430838
+epoch 35 con_train loss 3.074082664682084
+epoch 35 natural feedback/component/route/shaper loss 0.000000/2.877161/0.015168/2.839066
+epoch 35 natural component verb/object loss 2.670126/3.360242 | hard margin -0.568555/-0.485850 | component top1 0.444603/0.436247
+epoch 35 natural pair score std/component evidence abs 0.031838/0.004072 | feedback scale 0.023720 | residual abs 0.000523
+epoch 35 natural pair top1 agreement 0.386788 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018789/0.012711
+epoch 35 temporal rescue/damage/net 0.015860/0.021578/-0.005719 | disagreement 0.104663
+epoch 35 temporal proposal rescue/damage/net 0.015860/0.021578/-0.005719
+epoch 35 temporal gate entropy 0.634414 | max 0.741968
+epoch 35 temporal gate mean k3:0.108682 | k5:0.153732 | k7:0.343150 | k9:0.394436
+epoch 35 temporal gate min/mean/max k3:0.000000/0.108682/0.999997 | k5:0.000000/0.153732/1.000000 | k7:0.000000/0.343150/0.999990 | k9:0.000000/0.394436/0.999996
+epoch 35 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 36 train loss 5.655231257246322
+epoch 36 train seconds 699.00
+epoch 36 AMP nonfinite temporal gradient steps 0
+epoch 36 com loss 3.039797914629223
+epoch 36 vv loss 1.770289381311721
+epoch 36 oo loss 1.6926970064640046
+epoch 36 hsic_v loss 0.061624283659733645
+epoch 36 hsic_o loss 0.08998424660007492
+epoch 36 hsic_vo loss 0.00039635066796796584
+epoch 36 con_train loss 3.464578338430709
+epoch 36 natural feedback/component/route/shaper loss 0.000000/2.785920/0.014810/2.632445
+epoch 36 natural component verb/object loss 2.565032/3.301327 | hard margin -0.449519/-0.425896 | component top1 0.467818/0.451502
+epoch 36 natural pair score std/component evidence abs 0.031953/0.004159 | feedback scale 0.024245 | residual abs 0.000534
+epoch 36 natural pair top1 agreement 0.398296 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018851/0.012701
+epoch 36 temporal rescue/damage/net 0.014144/0.021085/-0.006941 | disagreement 0.095460
+epoch 36 temporal proposal rescue/damage/net 0.014144/0.021085/-0.006941
+epoch 36 temporal gate entropy 0.622066 | max 0.747835
+epoch 36 temporal gate mean k3:0.109435 | k5:0.151010 | k7:0.346680 | k9:0.392874
+epoch 36 temporal gate min/mean/max k3:0.000000/0.109435/0.999997 | k5:0.000000/0.151010/1.000000 | k7:0.000000/0.346680/0.999982 | k9:0.000000/0.392874/0.999990
+epoch 36 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.65| best_seen  0.5091| AUC  0.2944| best_hm  0.4627| attr_acc  0.5615| obj_acc  0.5926| ub_seen  0.4978| ub_unseen  0.2982| ub_all  0.362| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0191| temporal_damage  0.0207| temporal_disagreement  0.127| temporal_proposal_rescue  0.0191| temporal_proposal_damage  0.0207| temporal_pair_residual_abs  0.006| natural_pair_feedback_scale  0.035| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0338| natural_pair_evidence_abs  0.006| natural_pair_top1_agreement  0.3901| natural_pair_verb_effect_abs  0.0201| natural_pair_object_effect_abs  0.0127| temporal_object_prediction_preservation  0.9312| temporal_only_verb_change  0.0582| temporal_only_object_change  0.0377| temporal_both_change  0.0311| temporal_net_gain  -0.0015| temporal_proposal_net_gain  -0.0015| temporal_expert_k3_mean  0.1105| temporal_expert_k5_mean  0.1286| temporal_expert_k7_mean  0.3479| temporal_expert_k9_mean  0.413| 
+Validation Loss average: 8.345393180847168
+find best!
+
+best_unseen  0.5795| best_seen  0.5087| AUC  0.2669| best_hm  0.4522| attr_acc  0.5795| obj_acc  0.5837| ub_seen  0.4936| ub_unseen  0.303| ub_all  0.3696| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0194| temporal_damage  0.0198| temporal_disagreement  0.1263| temporal_proposal_rescue  0.0194| temporal_proposal_damage  0.0198| temporal_pair_residual_abs  0.0062| natural_pair_feedback_scale  0.0359| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0338| natural_pair_evidence_abs  0.0062| natural_pair_top1_agreement  0.3613| natural_pair_verb_effect_abs  0.0206| natural_pair_object_effect_abs  0.0125| temporal_object_prediction_preservation  0.9348| temporal_only_verb_change  0.0611| temporal_only_object_change  0.0358| temporal_both_change  0.0294| temporal_net_gain  -0.0004| temporal_proposal_net_gain  -0.0004| temporal_expert_k3_mean  0.1076| temporal_expert_k5_mean  0.1215| temporal_expert_k7_mean  0.3594| temporal_expert_k9_mean  0.4115| 
+Test Loss average: 8.344446182250977
+
+
+epoch 37 train loss 5.901439473208259
+epoch 37 train seconds 703.12
+epoch 37 AMP nonfinite temporal gradient steps 0
+epoch 37 com loss 3.1980603477033247
+epoch 37 vv loss 1.8652514206511634
+epoch 37 oo loss 1.7693950648568257
+epoch 37 hsic_v loss 0.06174117876764606
+epoch 37 hsic_o loss 0.08653697525503255
+epoch 37 hsic_vo loss 0.0004133180879464152
+epoch 37 con_train loss 2.9135130201067243
+epoch 37 natural feedback/component/route/shaper loss 0.000000/2.854256/0.014624/2.774948
+epoch 37 natural component verb/object loss 2.639609/3.355098 | hard margin -0.534487/-0.483344 | component top1 0.452444/0.435394
+epoch 37 natural pair score std/component evidence abs 0.031865/0.004114 | feedback scale 0.023977 | residual abs 0.000528
+epoch 37 natural pair top1 agreement 0.387579 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018790/0.012719
+epoch 37 temporal rescue/damage/net 0.014759/0.023170/-0.008411 | disagreement 0.102836
+epoch 37 temporal proposal rescue/damage/net 0.014759/0.023170/-0.008411
+epoch 37 temporal gate entropy 0.654035 | max 0.734025
+epoch 37 temporal gate mean k3:0.109495 | k5:0.153131 | k7:0.344803 | k9:0.392572
+epoch 37 temporal gate min/mean/max k3:0.000000/0.109495/0.999943 | k5:0.000000/0.153131/1.000000 | k7:0.000000/0.344803/0.999973 | k9:0.000000/0.392572/0.999998
+epoch 37 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 38 train loss 5.49120380597956
+epoch 38 train seconds 702.73
+epoch 38 AMP nonfinite temporal gradient steps 0
+epoch 38 com loss 2.934810685360131
+epoch 38 vv loss 1.725854114248973
+epoch 38 oo loss 1.6352341421511996
+epoch 38 hsic_v loss 0.05904867633738938
+epoch 38 hsic_o loss 0.08801082657540546
+epoch 38 hsic_vo loss 0.00041742982363505407
+epoch 38 con_train loss 3.5526835064928073
+epoch 38 natural feedback/component/route/shaper loss 0.000000/2.763992/0.014613/2.553805
+epoch 38 natural component verb/object loss 2.537071/3.293474 | hard margin -0.426155/-0.416473 | component top1 0.473884/0.451030
+epoch 38 natural pair score std/component evidence abs 0.031985/0.004317 | feedback scale 0.025182 | residual abs 0.000554
+epoch 38 natural pair top1 agreement 0.399647 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018890/0.012674
+epoch 38 temporal rescue/damage/net 0.014883/0.023016/-0.008133 | disagreement 0.098451
+epoch 38 temporal proposal rescue/damage/net 0.014883/0.023016/-0.008133
+epoch 38 temporal gate entropy 0.621209 | max 0.748039
+epoch 38 temporal gate mean k3:0.110231 | k5:0.151535 | k7:0.341861 | k9:0.396373
+epoch 38 temporal gate min/mean/max k3:0.000000/0.110231/0.999995 | k5:0.000000/0.151535/1.000000 | k7:0.000000/0.341861/0.999972 | k9:0.000000/0.396373/0.999997
+epoch 38 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 39 train loss 5.719308326825375
+epoch 39 train seconds 708.13
+epoch 39 AMP nonfinite temporal gradient steps 0
+epoch 39 com loss 3.089669740700922
+epoch 39 vv loss 1.8038146284447998
+epoch 39 oo loss 1.7059026430634892
+epoch 39 hsic_v loss 0.05966654031717477
+epoch 39 hsic_o loss 0.08615906721904498
+epoch 39 hsic_vo loss 0.00040430150736387946
+epoch 39 con_train loss 2.9843066976851778
+epoch 39 natural feedback/component/route/shaper loss 0.000000/2.813792/0.015090/2.682972
+epoch 39 natural component verb/object loss 2.594112/3.326379 | hard margin -0.492487/-0.456730 | component top1 0.461006/0.444659
+epoch 39 natural pair score std/component evidence abs 0.031949/0.004209 | feedback scale 0.024547 | residual abs 0.000540
+epoch 39 natural pair top1 agreement 0.396081 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018856/0.012715
+epoch 39 temporal rescue/damage/net 0.014434/0.022940/-0.008506 | disagreement 0.099317
+epoch 39 temporal proposal rescue/damage/net 0.014434/0.022940/-0.008506
+epoch 39 temporal gate entropy 0.656070 | max 0.732964
+epoch 39 temporal gate mean k3:0.111456 | k5:0.153801 | k7:0.344697 | k9:0.390045
+epoch 39 temporal gate min/mean/max k3:0.000000/0.111456/0.999956 | k5:0.000000/0.153801/1.000000 | k7:0.000000/0.344697/0.999980 | k9:0.000000/0.390045/0.999996
+epoch 39 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 40 train loss 5.720201137486626
+epoch 40 train seconds 695.67
+epoch 40 AMP nonfinite temporal gradient steps 0
+epoch 40 com loss 3.0910416291040534
+epoch 40 vv loss 1.8034029648083598
+epoch 40 oo loss 1.7126182062285287
+epoch 40 hsic_v loss 0.05835366521907203
+epoch 40 hsic_o loss 0.08503780595394743
+epoch 40 hsic_vo loss 0.00041678928945726175
+epoch 40 con_train loss 2.9307494636343305
+epoch 40 natural feedback/component/route/shaper loss 0.000000/2.816718/0.014209/2.684490
+epoch 40 natural component verb/object loss 2.596760/3.329955 | hard margin -0.492097/-0.462544 | component top1 0.464261/0.440919
+epoch 40 natural pair score std/component evidence abs 0.031908/0.004194 | feedback scale 0.024466 | residual abs 0.000538
+epoch 40 natural pair top1 agreement 0.396802 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018799/0.012693
+epoch 40 temporal rescue/damage/net 0.013757/0.022289/-0.008533 | disagreement 0.096038
+epoch 40 temporal proposal rescue/damage/net 0.013757/0.022289/-0.008533
+epoch 40 temporal gate entropy 0.663738 | max 0.729938
+epoch 40 temporal gate mean k3:0.111590 | k5:0.152058 | k7:0.343009 | k9:0.393344
+epoch 40 temporal gate min/mean/max k3:0.000000/0.111590/0.999988 | k5:0.000000/0.152058/1.000000 | k7:0.000000/0.343009/0.999981 | k9:0.000000/0.393344/0.999964
+epoch 40 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 41 train loss 5.4990672283813735
+epoch 41 train seconds 688.38
+epoch 41 AMP nonfinite temporal gradient steps 0
+epoch 41 com loss 2.9554006651169114
+epoch 41 vv loss 1.735097492066752
+epoch 41 oo loss 1.6362258938055079
+epoch 41 hsic_v loss 0.05574816511865674
+epoch 41 hsic_o loss 0.07943329904071925
+epoch 41 hsic_vo loss 0.0004066940692770432
+epoch 41 con_train loss 3.1436617731046277
+epoch 41 natural feedback/component/route/shaper loss 0.000000/2.771294/0.013604/2.565387
+epoch 41 natural component verb/object loss 2.541896/3.306556 | hard margin -0.441147/-0.427954 | component top1 0.476093/0.448519
+epoch 41 natural pair score std/component evidence abs 0.031991/0.004310 | feedback scale 0.025160 | residual abs 0.000553
+epoch 41 natural pair top1 agreement 0.400782 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018899/0.012665
+epoch 41 temporal rescue/damage/net 0.015184/0.022907/-0.007722 | disagreement 0.097523
+epoch 41 temporal proposal rescue/damage/net 0.015184/0.022907/-0.007722
+epoch 41 temporal gate entropy 0.664419 | max 0.729212
+epoch 41 temporal gate mean k3:0.111354 | k5:0.153776 | k7:0.343798 | k9:0.391072
+epoch 41 temporal gate min/mean/max k3:0.000000/0.111354/0.999925 | k5:0.000000/0.153776/1.000000 | k7:0.000000/0.343798/0.999940 | k9:0.000000/0.391072/0.999998
+epoch 41 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6493| best_seen  0.5091| AUC  0.2917| best_hm  0.4585| attr_acc  0.5556| obj_acc  0.598| ub_seen  0.4963| ub_unseen  0.2917| ub_all  0.3571| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0207| temporal_damage  0.0182| temporal_disagreement  0.1252| temporal_proposal_rescue  0.0207| temporal_proposal_damage  0.0182| temporal_pair_residual_abs  0.0065| natural_pair_feedback_scale  0.0379| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0338| natural_pair_evidence_abs  0.0065| natural_pair_top1_agreement  0.3996| natural_pair_verb_effect_abs  0.0201| natural_pair_object_effect_abs  0.0127| temporal_object_prediction_preservation  0.9332| temporal_only_verb_change  0.0584| temporal_only_object_change  0.0337| temporal_both_change  0.0331| temporal_net_gain  0.0025| temporal_proposal_net_gain  0.0025| temporal_expert_k3_mean  0.1143| temporal_expert_k5_mean  0.1336| temporal_expert_k7_mean  0.3351| temporal_expert_k9_mean  0.417| 
+Validation Loss average: 8.330846786499023
+
+
+epoch 42 train loss 5.337423158693714
+epoch 42 train seconds 694.03
+epoch 42 AMP nonfinite temporal gradient steps 0
+epoch 42 com loss 2.8472776778104927
+epoch 42 vv loss 1.6700115020034694
+epoch 42 oo loss 1.587131720130183
+epoch 42 hsic_v loss 0.05471816557389097
+epoch 42 hsic_o loss 0.07775872365704604
+epoch 42 hsic_vo loss 0.0004125487478486626
+epoch 42 con_train loss 3.4986984974195976
+epoch 42 natural feedback/component/route/shaper loss 0.000000/2.735437/0.014823/2.479762
+epoch 42 natural component verb/object loss 2.499094/3.286903 | hard margin -0.395719/-0.402515 | component top1 0.482156/0.454546
+epoch 42 natural pair score std/component evidence abs 0.032087/0.004397 | feedback scale 0.025685 | residual abs 0.000564
+epoch 42 natural pair top1 agreement 0.401386 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018973/0.012650
+epoch 42 temporal rescue/damage/net 0.013394/0.022250/-0.008856 | disagreement 0.091413
+epoch 42 temporal proposal rescue/damage/net 0.013394/0.022250/-0.008856
+epoch 42 temporal gate entropy 0.657705 | max 0.733926
+epoch 42 temporal gate mean k3:0.113310 | k5:0.154207 | k7:0.343623 | k9:0.388860
+epoch 42 temporal gate min/mean/max k3:0.000000/0.113310/0.999936 | k5:0.000000/0.154207/1.000000 | k7:0.000000/0.343623/0.999984 | k9:0.000000/0.388860/0.999979
+epoch 42 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 43 train loss 5.41333976112494
+epoch 43 train seconds 714.08
+epoch 43 AMP nonfinite temporal gradient steps 0
+epoch 43 com loss 2.908603676427312
+epoch 43 vv loss 1.7004354452636061
+epoch 43 oo loss 1.6106486915540295
+epoch 43 hsic_v loss 0.05398019602944871
+epoch 43 hsic_o loss 0.07883358756784631
+epoch 43 hsic_vo loss 0.00041592240714108055
+epoch 43 con_train loss 3.1078736265166467
+epoch 43 natural feedback/component/route/shaper loss 0.000000/2.752823/0.014816/2.521166
+epoch 43 natural component verb/object loss 2.520655/3.294548 | hard margin -0.417520/-0.413087 | component top1 0.477004/0.452900
+epoch 43 natural pair score std/component evidence abs 0.032086/0.004338 | feedback scale 0.025328 | residual abs 0.000557
+epoch 43 natural pair top1 agreement 0.400823 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018964/0.012676
+epoch 43 temporal rescue/damage/net 0.013313/0.023069/-0.009756 | disagreement 0.095892
+epoch 43 temporal proposal rescue/damage/net 0.013313/0.023069/-0.009756
+epoch 43 temporal gate entropy 0.669168 | max 0.727844
+epoch 43 temporal gate mean k3:0.113515 | k5:0.151560 | k7:0.344325 | k9:0.390600
+epoch 43 temporal gate min/mean/max k3:0.000000/0.113515/0.999941 | k5:0.000000/0.151560/1.000000 | k7:0.000000/0.344325/0.999950 | k9:0.000000/0.390600/0.999959
+epoch 43 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 44 train loss 5.433591707413938
+epoch 44 train seconds 699.09
+epoch 44 AMP nonfinite temporal gradient steps 0
+epoch 44 com loss 2.9135036306471385
+epoch 44 vv loss 1.716573138998336
+epoch 44 oo loss 1.6157365445078922
+epoch 44 hsic_v loss 0.05496695146528112
+epoch 44 hsic_o loss 0.0801022863813809
+epoch 44 hsic_vo loss 0.0004227157232599595
+epoch 44 con_train loss 3.1610503413096196
+epoch 44 natural feedback/component/route/shaper loss 0.000000/2.763220/0.013703/2.534535
+epoch 44 natural component verb/object loss 2.534798/3.296206 | hard margin -0.434040/-0.422598 | component top1 0.479191/0.451723
+epoch 44 natural pair score std/component evidence abs 0.032070/0.004351 | feedback scale 0.025408 | residual abs 0.000558
+epoch 44 natural pair top1 agreement 0.400461 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018928/0.012693
+epoch 44 temporal rescue/damage/net 0.014140/0.022546/-0.008406 | disagreement 0.094004
+epoch 44 temporal proposal rescue/damage/net 0.014140/0.022546/-0.008406
+epoch 44 temporal gate entropy 0.679484 | max 0.724011
+epoch 44 temporal gate mean k3:0.113007 | k5:0.153333 | k7:0.343528 | k9:0.390132
+epoch 44 temporal gate min/mean/max k3:0.000000/0.113007/0.999945 | k5:0.000000/0.153333/1.000000 | k7:0.000000/0.343528/0.999933 | k9:0.000000/0.390132/0.999955
+epoch 44 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 45 train loss 5.445802225986449
+epoch 45 train seconds 696.46
+epoch 45 AMP nonfinite temporal gradient steps 0
+epoch 45 com loss 2.941535429894423
+epoch 45 vv loss 1.7140246307148652
+epoch 45 oo loss 1.6174546631945281
+epoch 45 hsic_v loss 0.05391486856867286
+epoch 45 hsic_o loss 0.07669088963826164
+epoch 45 hsic_vo loss 0.0004247606575915574
+epoch 45 con_train loss 2.7879351367469596
+epoch 45 natural feedback/component/route/shaper loss 0.000000/2.761764/0.014036/2.541852
+epoch 45 natural component verb/object loss 2.533806/3.293665 | hard margin -0.435879/-0.420358 | component top1 0.477152/0.453383
+epoch 45 natural pair score std/component evidence abs 0.032076/0.004293 | feedback scale 0.025065 | residual abs 0.000551
+epoch 45 natural pair top1 agreement 0.402862 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018931/0.012707
+epoch 45 temporal rescue/damage/net 0.013552/0.022748/-0.009196 | disagreement 0.094106
+epoch 45 temporal proposal rescue/damage/net 0.013552/0.022748/-0.009196
+epoch 45 temporal gate entropy 0.680924 | max 0.723576
+epoch 45 temporal gate mean k3:0.112764 | k5:0.153504 | k7:0.343623 | k9:0.390108
+epoch 45 temporal gate min/mean/max k3:0.000000/0.112764/0.999959 | k5:0.000000/0.153504/1.000000 | k7:0.000000/0.343623/0.999896 | k9:0.000000/0.390108/0.999939
+epoch 45 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+
+epoch 46 train loss 5.406612657699265
+epoch 46 train seconds 697.90
+epoch 46 AMP nonfinite temporal gradient steps 0
+epoch 46 com loss 2.913251969168166
+epoch 46 vv loss 1.704374707283593
+epoch 46 oo loss 1.6050188534650482
+epoch 46 hsic_v loss 0.0539505610665103
+epoch 46 hsic_o loss 0.07607868247109802
+epoch 46 hsic_vo loss 0.000429763674184273
+epoch 46 con_train loss 2.87672668424975
+epoch 46 natural feedback/component/route/shaper loss 0.000000/2.759733/0.012837/2.520766
+epoch 46 natural component verb/object loss 2.529556/3.296813 | hard margin -0.424398/-0.416784 | component top1 0.477803/0.452206
+epoch 46 natural pair score std/component evidence abs 0.032059/0.004317 | feedback scale 0.025213 | residual abs 0.000554
+epoch 46 natural pair top1 agreement 0.404298 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018929/0.012680
+epoch 46 temporal rescue/damage/net 0.013072/0.023628/-0.010556 | disagreement 0.092507
+epoch 46 temporal proposal rescue/damage/net 0.013072/0.023628/-0.010556
+epoch 46 temporal gate entropy 0.684234 | max 0.721847
+epoch 46 temporal gate mean k3:0.112072 | k5:0.152568 | k7:0.344933 | k9:0.390427
+epoch 46 temporal gate min/mean/max k3:0.000000/0.112072/0.999952 | k5:0.000000/0.152568/1.000000 | k7:0.000000/0.344933/0.999955 | k9:0.000000/0.390427/0.999979
+epoch 46 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6556| best_seen  0.5126| AUC  0.2984| best_hm  0.4638| attr_acc  0.5623| obj_acc  0.6009| ub_seen  0.5014| ub_unseen  0.298| ub_all  0.3631| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0192| temporal_damage  0.0195| temporal_disagreement  0.1254| temporal_proposal_rescue  0.0192| temporal_proposal_damage  0.0195| temporal_pair_residual_abs  0.0067| natural_pair_feedback_scale  0.039| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0338| natural_pair_evidence_abs  0.0067| natural_pair_top1_agreement  0.4074| natural_pair_verb_effect_abs  0.0202| natural_pair_object_effect_abs  0.0126| temporal_object_prediction_preservation  0.9345| temporal_only_verb_change  0.0599| temporal_only_object_change  0.033| temporal_both_change  0.0325| temporal_net_gain  -0.0003| temporal_proposal_net_gain  -0.0003| temporal_expert_k3_mean  0.109| temporal_expert_k5_mean  0.1342| temporal_expert_k7_mean  0.335| temporal_expert_k9_mean  0.4218| 
+Validation Loss average: 8.326525688171387
+find best!
+
+best_unseen  0.5792| best_seen  0.5175| AUC  0.2725| best_hm  0.457| attr_acc  0.5812| obj_acc  0.5924| ub_seen  0.5023| ub_unseen  0.3069| ub_all  0.3752| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0178| temporal_damage  0.0235| temporal_disagreement  0.1313| temporal_proposal_rescue  0.0178| temporal_proposal_damage  0.0235| temporal_pair_residual_abs  0.0068| natural_pair_feedback_scale  0.0397| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0068| natural_pair_top1_agreement  0.3749| natural_pair_verb_effect_abs  0.0207| natural_pair_object_effect_abs  0.0124| temporal_object_prediction_preservation  0.9328| temporal_only_verb_change  0.064| temporal_only_object_change  0.0374| temporal_both_change  0.0298| temporal_net_gain  -0.0057| temporal_proposal_net_gain  -0.0057| temporal_expert_k3_mean  0.1042| temporal_expert_k5_mean  0.1308| temporal_expert_k7_mean  0.3431| temporal_expert_k9_mean  0.4219| 
+Test Loss average: 8.326340675354004
+
+
+epoch 47 train loss 5.4601421157852945
+epoch 47 train seconds 711.41
+epoch 47 AMP nonfinite temporal gradient steps 0
+epoch 47 com loss 2.922867912429721
+epoch 47 vv loss 1.7254497428401179
+epoch 47 oo loss 1.6304138621111879
+epoch 47 hsic_v loss 0.05471584101935395
+epoch 47 hsic_o loss 0.07815380857772186
+epoch 47 hsic_vo loss 0.0004355303702255742
+epoch 47 con_train loss 3.125184783614984
+epoch 47 natural feedback/component/route/shaper loss 0.000000/2.771904/0.013195/2.560925
+epoch 47 natural component verb/object loss 2.539535/3.314097 | hard margin -0.440326/-0.436610 | component top1 0.475201/0.449151
+epoch 47 natural pair score std/component evidence abs 0.032044/0.004379 | feedback scale 0.025569 | residual abs 0.000562
+epoch 47 natural pair top1 agreement 0.402185 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018942/0.012676
+epoch 47 temporal rescue/damage/net 0.013965/0.021980/-0.008015 | disagreement 0.092180
+epoch 47 temporal proposal rescue/damage/net 0.013965/0.021980/-0.008015
+epoch 47 temporal gate entropy 0.689190 | max 0.719318
+epoch 47 temporal gate mean k3:0.111145 | k5:0.152956 | k7:0.343429 | k9:0.392471
+epoch 47 temporal gate min/mean/max k3:0.000000/0.111145/0.999971 | k5:0.000000/0.152956/1.000000 | k7:0.000000/0.343429/0.999980 | k9:0.000000/0.392471/0.999967
+epoch 47 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.654| best_seen  0.5142| AUC  0.2977| best_hm  0.463| attr_acc  0.561| obj_acc  0.6014| ub_seen  0.5032| ub_unseen  0.2943| ub_all  0.3612| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0205| temporal_damage  0.0203| temporal_disagreement  0.1274| temporal_proposal_rescue  0.0205| temporal_proposal_damage  0.0203| temporal_pair_residual_abs  0.0067| natural_pair_feedback_scale  0.039| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0067| natural_pair_top1_agreement  0.4057| natural_pair_verb_effect_abs  0.0202| natural_pair_object_effect_abs  0.0126| temporal_object_prediction_preservation  0.9311| temporal_only_verb_change  0.0585| temporal_only_object_change  0.0349| temporal_both_change  0.034| temporal_net_gain  0.0001| temporal_proposal_net_gain  0.0001| temporal_expert_k3_mean  0.1115| temporal_expert_k5_mean  0.1381| temporal_expert_k7_mean  0.3346| temporal_expert_k9_mean  0.4158| 
+Validation Loss average: 8.32646369934082
+
+
+epoch 48 train loss 5.078591355355848
+epoch 48 train seconds 727.56
+epoch 48 AMP nonfinite temporal gradient steps 0
+epoch 48 com loss 2.7040796811089796
+epoch 48 vv loss 1.5803021749778956
+epoch 48 oo loss 1.5033465455810562
+epoch 48 hsic_v loss 0.052523347184437665
+epoch 48 hsic_o loss 0.07407378858002293
+epoch 48 hsic_vo loss 0.00044310044158766626
+epoch 48 con_train loss 3.409242075431247
+epoch 48 natural feedback/component/route/shaper loss 0.000000/2.677571/0.013892/2.345405
+epoch 48 natural component verb/object loss 2.431410/3.251948 | hard margin -0.329157/-0.361694 | component top1 0.498786/0.464250
+epoch 48 natural pair score std/component evidence abs 0.032196/0.004467 | feedback scale 0.026115 | residual abs 0.000573
+epoch 48 natural pair top1 agreement 0.410040 | fixed feedback strength 0.000000 | raw verb/object evidence 0.019041/0.012635
+epoch 48 temporal rescue/damage/net 0.013518/0.022762/-0.009245 | disagreement 0.087882
+epoch 48 temporal proposal rescue/damage/net 0.013518/0.022762/-0.009245
+epoch 48 temporal gate entropy 0.669374 | max 0.729519
+epoch 48 temporal gate mean k3:0.112267 | k5:0.154926 | k7:0.342983 | k9:0.389825
+epoch 48 temporal gate min/mean/max k3:0.000000/0.112267/0.999955 | k5:0.000000/0.154926/1.000000 | k7:0.000000/0.342983/0.999865 | k9:0.000000/0.389825/0.999981
+epoch 48 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6541| best_seen  0.5157| AUC  0.2989| best_hm  0.4634| attr_acc  0.5614| obj_acc  0.6008| ub_seen  0.5036| ub_unseen  0.2952| ub_all  0.3619| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0202| temporal_damage  0.02| temporal_disagreement  0.128| temporal_proposal_rescue  0.0202| temporal_proposal_damage  0.02| temporal_pair_residual_abs  0.0067| natural_pair_feedback_scale  0.039| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0067| natural_pair_top1_agreement  0.4056| natural_pair_verb_effect_abs  0.0202| natural_pair_object_effect_abs  0.0127| temporal_object_prediction_preservation  0.9316| temporal_only_verb_change  0.0596| temporal_only_object_change  0.0358| temporal_both_change  0.0325| temporal_net_gain  0.0003| temporal_proposal_net_gain  0.0003| temporal_expert_k3_mean  0.1108| temporal_expert_k5_mean  0.1388| temporal_expert_k7_mean  0.331| temporal_expert_k9_mean  0.4194| 
+Validation Loss average: 8.326068878173828
+find best!
+
+best_unseen  0.5815| best_seen  0.5178| AUC  0.2734| best_hm  0.4574| attr_acc  0.5825| obj_acc  0.5924| ub_seen  0.502| ub_unseen  0.3079| ub_all  0.3757| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0194| temporal_damage  0.0218| temporal_disagreement  0.1298| temporal_proposal_rescue  0.0194| temporal_proposal_damage  0.0218| temporal_pair_residual_abs  0.0068| natural_pair_feedback_scale  0.0397| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0068| natural_pair_top1_agreement  0.3729| natural_pair_verb_effect_abs  0.0207| natural_pair_object_effect_abs  0.0124| temporal_object_prediction_preservation  0.9343| temporal_only_verb_change  0.0641| temporal_only_object_change  0.0373| temporal_both_change  0.0285| temporal_net_gain  -0.0023| temporal_proposal_net_gain  -0.0023| temporal_expert_k3_mean  0.1058| temporal_expert_k5_mean  0.1355| temporal_expert_k7_mean  0.3393| temporal_expert_k9_mean  0.4193| 
+Test Loss average: 8.325725555419922
+
+
+epoch 49 train loss 5.218605176540984
+epoch 49 train seconds 718.92
+epoch 49 AMP nonfinite temporal gradient steps 0
+epoch 49 com loss 2.7975020681860068
+epoch 49 vv loss 1.6309916769256112
+epoch 49 oo loss 1.5460361873903194
+epoch 49 hsic_v loss 0.053364048588300954
+epoch 49 hsic_o loss 0.07528727891377542
+epoch 49 hsic_vo loss 0.00043515123523763937
+epoch 49 con_train loss 3.0896237108887745
+epoch 49 natural feedback/component/route/shaper loss 0.000000/2.714785/0.013294/2.421648
+epoch 49 natural component verb/object loss 2.474356/3.275785 | hard margin -0.374928/-0.393784 | component top1 0.490065/0.455588
+epoch 49 natural pair score std/component evidence abs 0.032149/0.004403 | feedback scale 0.025735 | residual abs 0.000565
+epoch 49 natural pair top1 agreement 0.407047 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018999/0.012661
+epoch 49 temporal rescue/damage/net 0.013717/0.022337/-0.008620 | disagreement 0.090225
+epoch 49 temporal proposal rescue/damage/net 0.013717/0.022337/-0.008620
+epoch 49 temporal gate entropy 0.679606 | max 0.724471
+epoch 49 temporal gate mean k3:0.111626 | k5:0.154521 | k7:0.343579 | k9:0.390274
+epoch 49 temporal gate min/mean/max k3:0.000000/0.111626/0.999917 | k5:0.000000/0.154521/1.000000 | k7:0.000000/0.343579/0.999917 | k9:0.000000/0.390274/0.999993
+epoch 49 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.654| best_seen  0.5177| AUC  0.2999| best_hm  0.4651| attr_acc  0.5628| obj_acc  0.6019| ub_seen  0.5062| ub_unseen  0.2961| ub_all  0.3634| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.021| temporal_damage  0.0197| temporal_disagreement  0.1281| temporal_proposal_rescue  0.021| temporal_proposal_damage  0.0197| temporal_pair_residual_abs  0.0066| natural_pair_feedback_scale  0.0388| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0338| natural_pair_evidence_abs  0.0066| natural_pair_top1_agreement  0.4051| natural_pair_verb_effect_abs  0.0202| natural_pair_object_effect_abs  0.0127| temporal_object_prediction_preservation  0.9321| temporal_only_verb_change  0.0602| temporal_only_object_change  0.0353| temporal_both_change  0.0325| temporal_net_gain  0.0013| temporal_proposal_net_gain  0.0013| temporal_expert_k3_mean  0.111| temporal_expert_k5_mean  0.1376| temporal_expert_k7_mean  0.3344| temporal_expert_k9_mean  0.4169| 
+Validation Loss average: 8.327620506286621
+find best!
+
+best_unseen  0.5815| best_seen  0.5181| AUC  0.2737| best_hm  0.4576| attr_acc  0.5827| obj_acc  0.5926| ub_seen  0.5023| ub_unseen  0.3084| ub_all  0.3761| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0197| temporal_damage  0.0214| temporal_disagreement  0.1298| temporal_proposal_rescue  0.0197| temporal_proposal_damage  0.0214| temporal_pair_residual_abs  0.0068| natural_pair_feedback_scale  0.0395| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0068| natural_pair_top1_agreement  0.3737| natural_pair_verb_effect_abs  0.0206| natural_pair_object_effect_abs  0.0125| temporal_object_prediction_preservation  0.9336| temporal_only_verb_change  0.0634| temporal_only_object_change  0.0369| temporal_both_change  0.0294| temporal_net_gain  -0.0017| temporal_proposal_net_gain  -0.0017| temporal_expert_k3_mean  0.1061| temporal_expert_k5_mean  0.1343| temporal_expert_k7_mean  0.3429| temporal_expert_k9_mean  0.4166| 
+Test Loss average: 8.327291488647461
+
+
+epoch 50 train loss 5.42739054956356
+epoch 50 train seconds 730.73
+epoch 50 AMP nonfinite temporal gradient steps 0
+epoch 50 com loss 2.9145470388045833
+epoch 50 vv loss 1.7101670563972298
+epoch 50 oo loss 1.6134299770122817
+epoch 50 hsic_v loss 0.05391622949078554
+epoch 50 hsic_o loss 0.07601685626354038
+epoch 50 hsic_vo loss 0.0004341087091279787
+epoch 50 con_train loss 2.9830861275937375
+epoch 50 natural feedback/component/route/shaper loss 0.000000/2.766724/0.013359/2.541314
+epoch 50 natural component verb/object loss 2.534780/3.307927 | hard margin -0.436610/-0.430102 | component top1 0.474350/0.449095
+epoch 50 natural pair score std/component evidence abs 0.032057/0.004342 | feedback scale 0.025356 | residual abs 0.000557
+epoch 50 natural pair top1 agreement 0.400408 | fixed feedback strength 0.000000 | raw verb/object evidence 0.018937/0.012689
+epoch 50 temporal rescue/damage/net 0.014494/0.022659/-0.008166 | disagreement 0.095011
+epoch 50 temporal proposal rescue/damage/net 0.014494/0.022659/-0.008166
+epoch 50 temporal gate entropy 0.696785 | max 0.716427
+epoch 50 temporal gate mean k3:0.112285 | k5:0.152875 | k7:0.345115 | k9:0.389725
+epoch 50 temporal gate min/mean/max k3:0.000000/0.112285/0.999992 | k5:0.000000/0.152875/1.000000 | k7:0.000000/0.345115/0.999896 | k9:0.000000/0.389725/0.999982
+epoch 50 temporal branch settings adaptive temperature 4.0000 | role-robust natural joint text | train-without-fusion True | inference verb/object strengths 0.200/0.100 | prompt weights 0.25,0.25,0.50 | decomposition iterations 8 | component/feedback/route/shaper loss weights 0.1500/0.0000/0.0200/0.5000 | verb/object component mix 0.700/0.300 | component logit scale 50.0000 | feature residual 0.0500 | backbone gradient scale 0.2500 | relation shaper True
+
+best_unseen  0.6537| best_seen  0.5171| AUC  0.2994| best_hm  0.4646| attr_acc  0.5622| obj_acc  0.6018| ub_seen  0.5059| ub_unseen  0.2956| ub_all  0.3629| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0211| temporal_damage  0.0201| temporal_disagreement  0.1284| temporal_proposal_rescue  0.0211| temporal_proposal_damage  0.0201| temporal_pair_residual_abs  0.0067| natural_pair_feedback_scale  0.0388| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0067| natural_pair_top1_agreement  0.4057| natural_pair_verb_effect_abs  0.0202| natural_pair_object_effect_abs  0.0127| temporal_object_prediction_preservation  0.9324| temporal_only_verb_change  0.0607| temporal_only_object_change  0.0353| temporal_both_change  0.0323| temporal_net_gain  0.001| temporal_proposal_net_gain  0.001| temporal_expert_k3_mean  0.1114| temporal_expert_k5_mean  0.1375| temporal_expert_k7_mean  0.3335| temporal_expert_k9_mean  0.4176| 
+Validation Loss average: 8.327256202697754
+
+
+best_unseen  0.5815| best_seen  0.5181| AUC  0.2737| best_hm  0.4576| attr_acc  0.5827| obj_acc  0.5926| ub_seen  0.5023| ub_unseen  0.3084| ub_all  0.3761| natural_alpha_verb  0.2| natural_alpha_object  0.1| temporal_rescue  0.0197| temporal_damage  0.0214| temporal_disagreement  0.1298| temporal_proposal_rescue  0.0197| temporal_proposal_damage  0.0214| temporal_pair_residual_abs  0.0068| natural_pair_feedback_scale  0.0395| natural_pair_feedback_strength_mean  0.3| natural_pair_feedback_strength_std  0.0| natural_pair_score_std  0.0339| natural_pair_evidence_abs  0.0068| natural_pair_top1_agreement  0.3737| natural_pair_verb_effect_abs  0.0206| natural_pair_object_effect_abs  0.0125| temporal_object_prediction_preservation  0.9336| temporal_only_verb_change  0.0634| temporal_only_object_change  0.0369| temporal_both_change  0.0294| temporal_net_gain  -0.0017| temporal_proposal_net_gain  -0.0017| temporal_expert_k3_mean  0.1061| temporal_expert_k5_mean  0.1343| temporal_expert_k7_mean  0.3429| temporal_expert_k9_mean  0.4166| 
+Final test Loss average: 8.327291488647461
